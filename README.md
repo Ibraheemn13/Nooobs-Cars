@@ -6,8 +6,7 @@ NOOOBS CARS is an online web-based automobile buying and selling platform. Where
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## NOOOBS CARS | Tools & Technology
-
-Will be updated sooner than you think
+* <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
