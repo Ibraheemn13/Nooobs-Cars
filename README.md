@@ -33,23 +33,23 @@ Don't forget to give the project a star! Thanks again!
 
   ### PROTOTYPE
 
-    ### HOME
-    ![New Homepage](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/e25af684-6f37-4a2d-9aa0-f477c817fbb2)
+  ### HOME
+  ![New Homepage](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/e25af684-6f37-4a2d-9aa0-f477c817fbb2)
 
-### LOGIN
-![Login](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/e3644d68-3b89-47b0-b988-8c004d890612)
+  ### LOGIN
+  ![Login](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/e3644d68-3b89-47b0-b988-8c004d890612)
 
-### BROWSE CAR BY TYPE
-![Browse by car type](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/dc5b795e-bd6a-4b73-ac20-69786a06d645)
+  ### BROWSE CAR BY TYPE
+  ![Browse by car type](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/dc5b795e-bd6a-4b73-ac20-69786a06d645)
 
-### CAR DETAILS
-![Car details](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/364bef10-0c08-4242-b1d6-9cc6b2bde7bb)
+  ### CAR DETAILS
+  ![Car details](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/364bef10-0c08-4242-b1d6-9cc6b2bde7bb)
 
-### BUY NOW
-![Buy Now](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/a7037a5e-e6da-4a35-bacb-08ed241740b3)
+  ### BUY NOW
+  ![Buy Now](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/a7037a5e-e6da-4a35-bacb-08ed241740b3)
 
-### CONTACT
-![Contact](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/a5d5a2ba-9aa4-41f1-b3a3-817a3ffbf679)
+  ### CONTACT
+  ![Contact](https://github.com/Ibraheemn13/Nooobs-Cars/assets/68946009/a5d5a2ba-9aa4-41f1-b3a3-817a3ffbf679)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
