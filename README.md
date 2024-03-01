@@ -28,7 +28,7 @@ Don't forget to give the project a star! Thanks again!
 ## NOOOBS CARS | DESIGN PROTOTYPE
 
   ### LINK TO THE PROTOTYPE
-  * https://www.figma.com/file/IfjAWYomT3U6sq4kzcdsbZ/ASSIGNMENT-1?type=design&node-id=88-1092&mode=design&t=cJG441aNvjVhyW2v-0
+  * https://www.figma.com/proto/IfjAWYomT3U6sq4kzcdsbZ/SE-ASSIGNMENT-1?node-id=62-257&starting-point-node-id=62%3A257&scaling=scale-down-width&t=5pLPyO8v8d3Njh50-1&authuser=0
 
   ### PROTOTYPE
 
