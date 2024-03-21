@@ -1,0 +1,1939 @@
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.new-homepage,
+.new-homepage * {
+  box-sizing: border-box;
+}
+.new-homepage {
+  background: #121212;
+  height: 4327px;
+  position: relative;
+  overflow: hidden;
+}
+.pg-1 {
+  position: absolute;
+  inset: 0;
+}
+.bg-mclaren {
+  width: 1442px;
+  height: 836px;
+  position: absolute;
+  left: calc(50% - 722px);
+  top: -174px;
+  object-fit: cover;
+}
+.nav-bar {
+  width: 1285px;
+  height: 72px;
+  position: static;
+}
+.rectangle-5 {
+  background: #d9d9d9;
+  border-radius: 25px;
+  width: 1285px;
+  height: 72px;
+  position: absolute;
+  left: calc(50% - 642px);
+  top: 20px;
+}
+.n-o-o-o-b-s {
+  color: #fb4729;
+  text-align: left;
+  font-family: "PressStart2P-Regular", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 622px);
+  top: 45.35px;
+  width: 274px;
+  height: 21.3px;
+}
+.group-1 {
+  width: 525px;
+  height: 29px;
+  position: static;
+}
+.about-us {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - -425px);
+  top: 43px;
+  width: 85px;
+  height: 26px;
+}
+.contact {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - -325px);
+  top: 43px;
+  width: 74px;
+  height: 26px;
+}
+.experiences {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - -187px);
+  top: 43px;
+  width: 112px;
+  height: 26px;
+}
+.brands {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - -95px);
+  top: 43px;
+  width: 66px;
+  height: 26px;
+}
+.search-icon {
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  left: calc(50% - -536px);
+  top: 40px;
+  object-fit: cover;
+}
+.login-icon {
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  left: calc(50% - -591px);
+  top: 40px;
+  object-fit: cover;
+}
+.experience-the-automotive-fascination {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 396px);
+  top: 159px;
+  width: 778px;
+  height: 58px;
+}
+.selling-new-and-used-cars-since-2003 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 379px);
+  top: 214px;
+  width: 740px;
+  height: 57px;
+}
+.service-btn {
+  width: 134px;
+  height: 50px;
+  position: static;
+}
+.rectangle-7 {
+  background: #ff6000;
+  border-radius: 40px;
+  width: 134px;
+  height: 50px;
+  position: absolute;
+  left: calc(50% - -137px);
+  top: 412px;
+}
+.service {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -159px);
+  top: 416px;
+  width: 90px;
+  height: 42px;
+}
+.buttons-pg-1 {
+  width: 339px;
+  height: 50px;
+  position: static;
+}
+.purchase-btn {
+  width: 134px;
+  height: 50px;
+  position: static;
+}
+.rectangle-72 {
+  background: #ff6000;
+  border-radius: 40px;
+  width: 134px;
+  height: 50px;
+  position: absolute;
+  left: calc(50% - 68px);
+  top: 412px;
+}
+.purchase {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 58px);
+  top: 416px;
+  width: 112px;
+  height: 42px;
+}
+.finance-btn {
+  width: 134px;
+  height: 50px;
+  position: static;
+}
+.rectangle-73 {
+  background: #ff6000;
+  border-radius: 40px;
+  width: 134px;
+  height: 50px;
+  position: absolute;
+  left: calc(50% - 273px);
+  top: 412px;
+}
+.finance {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 254px);
+  top: 416px;
+  width: 95px;
+  height: 42px;
+}
+.book-test-drive {
+  width: 426px;
+  height: 46px;
+  position: static;
+}
+.rectangle-9 {
+  background: #434647;
+  border-radius: 40px;
+  width: 426px;
+  height: 46px;
+  position: absolute;
+  left: calc(50% - 214px);
+  top: 297px;
+}
+.book-a-free-test-drive {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Light", sans-serif;
+  font-size: 31px;
+  font-weight: 300;
+  position: absolute;
+  left: calc(50% - 197px);
+  top: 299px;
+  width: 297.97px;
+  height: 41.04px;
+}
+.book-now {
+  width: 84.15px;
+  height: 28.42px;
+  position: static;
+}
+.rectangle-8 {
+  background: #ff6000;
+  border-radius: 40px;
+  width: 84.15px;
+  height: 28.42px;
+  position: absolute;
+  left: calc(50% - -113.55px);
+  top: 306px;
+}
+.book-now2 {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -120.45px);
+  top: 311px;
+  width: 73.55px;
+  height: 12px;
+}
+.pg-3 {
+  position: absolute;
+  inset: 0;
+}
+.pg-3-bg {
+  background: #353839;
+  width: 1440px;
+  height: 701px;
+  position: absolute;
+  left: calc(50% - 719px);
+  top: 3361px;
+}
+.experinces {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 105px);
+  top: 3393px;
+}
+.read-what-others-have-to-say {
+  color: #fffafa;
+  text-align: center;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 220px);
+  top: 3453px;
+  width: 441px;
+}
+.people {
+  width: 1014.26px;
+  height: 304px;
+  position: static;
+}
+.olivia-cole {
+  width: 159.26px;
+  height: 221.07px;
+  position: static;
+}
+.rectangle-92 {
+  background: rgba(255, 96, 0, 0.9);
+  border-radius: 20px;
+  width: 159.26px;
+  height: 177.44px;
+  position: absolute;
+  left: calc(50% - 506px);
+  top: 3674.63px;
+}
+.olivia-cole2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 470.37px);
+  top: 3721.9px;
+  width: 87.26px;
+  height: 21.82px;
+}
+.follow-n-o-o-o-b-s-on-instagram-n-o-o-o-b-s {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 490.73px);
+  top: 3748.81px;
+  width: 127.99px;
+  height: 77.08px;
+}
+.undefined-2 {
+  border-radius: 43.63px;
+  width: 87.26px;
+  height: 87.26px;
+  position: absolute;
+  left: calc(50% - 470.37px);
+  top: 3631px;
+  object-fit: cover;
+}
+.don-carlos {
+  width: 190.71px;
+  height: 264.74px;
+  position: static;
+}
+.rectangle-93 {
+  background: rgba(255, 96, 0, 0.9);
+  border-radius: 20px;
+  width: 190.71px;
+  height: 212.48px;
+  position: absolute;
+  left: calc(50% - 319px);
+  top: 3661.25px;
+}
+.undefined-4 {
+  border-radius: 54.43px;
+  width: 108.85px;
+  height: 108.85px;
+  position: absolute;
+  left: calc(50% - 276.33px);
+  top: 3609px;
+  object-fit: cover;
+}
+.don-carlos2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 277.2px);
+  top: 3717.85px;
+  width: 107.11px;
+  height: 26.13px;
+}
+.excellent-and-fast-purchase-of-my-car-with-best-offer-would-recommend {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 300.71px);
+  top: 3750.08px;
+  width: 153.27px;
+  height: 92.31px;
+}
+.anna-cosmith {
+  width: 219px;
+  height: 304px;
+  position: static;
+}
+.rectangle-94 {
+  background: rgba(255, 96, 0, 0.9);
+  border-radius: 20px;
+  width: 219px;
+  height: 244px;
+  position: absolute;
+  left: calc(50% - 109px);
+  top: 3647px;
+}
+.download-1 {
+  border-radius: 60px;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: calc(50% - 60px);
+  top: 3587px;
+  object-fit: cover;
+}
+.anna-cosmith2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 78px);
+  top: 3712px;
+}
+.customer-service-is-fantastic-nooobs-made-everything-simple-streamlined-and-stress-free {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 88px);
+  top: 3749px;
+  width: 176px;
+  height: 106px;
+}
+.timithy-cena {
+  width: 190.71px;
+  height: 264.74px;
+  position: static;
+}
+.rectangle-95 {
+  background: rgba(255, 96, 0, 0.9);
+  border-radius: 20px;
+  width: 190.71px;
+  height: 212.48px;
+  position: absolute;
+  left: calc(50% - -127.29px);
+  top: 3658.52px;
+}
+.undefined-5 {
+  border-radius: 53.12px;
+  width: 106.24px;
+  height: 106.24px;
+  position: absolute;
+  left: calc(50% - -169.96px);
+  top: 3606.26px;
+  object-fit: cover;
+}
+.timithy-cena2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - -158.64px);
+  top: 3715.12px;
+  width: 128.01px;
+  height: 26.13px;
+}
+.efficient-service-good-price-as-compared-to-market-very-impressed {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -145.57px);
+  top: 3747.34px;
+  width: 153.27px;
+  height: 92.31px;
+}
+.alex-chui {
+  width: 159.26px;
+  height: 223.98px;
+  position: static;
+}
+.rectangle-96 {
+  background: rgba(255, 96, 0, 0.9);
+  border-radius: 20px;
+  width: 159.26px;
+  height: 177.44px;
+  position: absolute;
+  left: calc(50% - -349px);
+  top: 3674.63px;
+}
+.undefined-3 {
+  border-radius: 43.63px;
+  width: 87.26px;
+  height: 87.26px;
+  position: absolute;
+  left: calc(50% - -384.63px);
+  top: 3628.09px;
+  object-fit: cover;
+}
+.alex-chui2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - -390.45px);
+  top: 3721.9px;
+  width: 75.63px;
+  height: 21.82px;
+}
+.nice-and-very-smooth-process {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -364.27px);
+  top: 3748.81px;
+  width: 127.99px;
+  height: 77.08px;
+}
+.featured-on {
+  width: 1065px;
+  height: 114px;
+  position: static;
+}
+.rectangle-19 {
+  background: rgba(196, 196, 196, 0.1);
+  border-radius: 20px;
+  width: 1065px;
+  height: 81px;
+  position: absolute;
+  left: calc(50% - 533px);
+  top: 3944px;
+}
+.image-5 {
+  width: 180px;
+  height: 28px;
+  position: absolute;
+  left: calc(50% - 161px);
+  top: 3971px;
+  object-fit: cover;
+}
+.image-6 {
+  width: 202px;
+  height: 75px;
+  position: absolute;
+  left: calc(50% - 499px);
+  top: 3947px;
+  object-fit: cover;
+}
+.image-7 {
+  width: 73px;
+  height: 40px;
+  position: absolute;
+  left: calc(50% - -155px);
+  top: 3961px;
+  object-fit: cover;
+}
+.image-8 {
+  width: 122px;
+  height: 31px;
+  position: absolute;
+  left: calc(50% - -364px);
+  top: 3965px;
+  object-fit: cover;
+}
+.featured-on2 {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 513px);
+  top: 3911px;
+}
+.arrows {
+  width: 1162.48px;
+  height: 67.22px;
+  position: static;
+}
+.left-arrow {
+  width: 49.48px;
+  height: 67.22px;
+  position: static;
+}
+.ellipse-2 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ff6000;
+  border-width: 1px;
+  width: 49.48px;
+  height: 49.48px;
+  position: absolute;
+  left: 139px;
+  top: 3746.79px;
+}
+.div {
+  color: #ff6000;
+  text-align: left;
+  font-family: "OdorMeanChey-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  left: 155.81px;
+  top: 3738.39px;
+  width: 14.94px;
+  height: 67.22px;
+}
+.right-arrow {
+  width: 49.48px;
+  height: 67.22px;
+  position: static;
+}
+.ellipse-22 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ff6000;
+  border-width: 1px;
+  width: 49.48px;
+  height: 49.48px;
+  position: absolute;
+  left: 1301.48px;
+  top: 3797.21px;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) scale(1, 1);
+}
+.div2 {
+  color: #ff6000;
+  text-align: left;
+  font-family: "OdorMeanChey-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  left: 1284.68px;
+  top: 3805.61px;
+  width: 14.94px;
+  height: 67.22px;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) scale(1, 1);
+}
+.footer {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-52 {
+  background: #fb4729;
+  border-radius: 25px;
+  width: 1285px;
+  height: 44px;
+  position: absolute;
+  left: calc(50% - 643px);
+  top: 4255px;
+}
+.copyright-2024-all-rights-reserved {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 142px);
+  top: 4265px;
+}
+.n-o-o-o-b-s2 {
+  color: #fb4729;
+  text-align: left;
+  font-family: "PressStart2P-Regular", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 644px);
+  top: 4090px;
+  width: 274px;
+  height: 21.3px;
+}
+.join-our-newsletter {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - -365px);
+  top: 4085px;
+  width: 152px;
+  height: 26px;
+}
+.brands-services-contact {
+  width: 321px;
+  height: 157px;
+  position: static;
+}
+.brands2 {
+  width: 86px;
+  height: 157px;
+  position: static;
+}
+.brands3 {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 163px);
+  top: 4085px;
+  width: 66px;
+  height: 26px;
+}
+.toyota {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 163px);
+  top: 4111px;
+  width: 66px;
+  height: 26px;
+}
+.nissan {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 163px);
+  top: 4132px;
+  width: 66px;
+  height: 26px;
+}
+.porsche {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 163px);
+  top: 4153px;
+  width: 66px;
+  height: 26px;
+}
+.lamborghini {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 163px);
+  top: 4174px;
+  width: 86px;
+  height: 26px;
+}
+.ferrari {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 163px);
+  top: 4195px;
+  width: 66px;
+  height: 26px;
+}
+.mclaren {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 163px);
+  top: 4216px;
+  width: 66px;
+  height: 26px;
+}
+.services {
+  width: 112px;
+  height: 94px;
+  position: static;
+}
+.services2 {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 53px);
+  top: 4085px;
+  width: 112px;
+  height: 26px;
+}
+.purchase2 {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 53px);
+  top: 4111px;
+  width: 66px;
+  height: 26px;
+}
+.finance2 {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 53px);
+  top: 4132px;
+  width: 66px;
+  height: 26px;
+}
+.service2 {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 53px);
+  top: 4153px;
+  width: 66px;
+  height: 26px;
+}
+.contact2 {
+  width: 101px;
+  height: 136px;
+  position: static;
+}
+.contact-us {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - -57px);
+  top: 4085px;
+  width: 91px;
+  height: 26px;
+}
+.phone-number {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -57px);
+  top: 4111px;
+  width: 101px;
+  height: 26px;
+}
+.email {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -57px);
+  top: 4132px;
+  width: 66px;
+  height: 26px;
+}
+.instagram {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -57px);
+  top: 4153px;
+  width: 71px;
+  height: 26px;
+}
+.facebook {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -57px);
+  top: 4174px;
+  width: 86px;
+  height: 26px;
+}
+.x {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - -57px);
+  top: 4195px;
+  width: 66px;
+  height: 26px;
+}
+.newsletter {
+  width: 295px;
+  height: 46px;
+  position: static;
+}
+.rectangle-82 {
+  background: #434647;
+  border-radius: 40px;
+  width: 295px;
+  height: 46px;
+  position: absolute;
+  left: calc(50% - -346px);
+  top: 4111px;
+}
+.email-address {
+  color: rgba(255, 250, 250, 0.5);
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -365px);
+  top: 4122px;
+  width: 151px;
+  height: 25px;
+}
+.submit {
+  width: 97px;
+  height: 32px;
+  position: static;
+}
+.rectangle-20 {
+  background: #ff6000;
+  border-radius: 20px;
+  width: 97px;
+  height: 32px;
+  position: absolute;
+  left: calc(50% - -533px);
+  top: 4119px;
+}
+.submit2 {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -552px);
+  top: 4125px;
+  width: 59px;
+  height: 19px;
+}
+.ibem {
+  color: rgba(255, 250, 250, 0.5);
+  text-align: left;
+  font-family: "OdorMeanChey-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 24px);
+  top: 4294px;
+  width: 45px;
+  height: 33px;
+}
+.pg-2 {
+  position: absolute;
+  inset: 0;
+}
+.pg-2-bg {
+  background: #fffafa;
+  width: 1440px;
+  height: 2779px;
+  position: absolute;
+  left: calc(50% - 719px);
+  top: 582px;
+}
+.browse-cars {
+  width: 1286px;
+  height: 790px;
+  position: static;
+}
+.browse-cars2 {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 112px);
+  top: 2531px;
+}
+.browse-by-type {
+  width: 1286px;
+  height: 172px;
+  position: static;
+}
+.browse-by-car-type {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 644px);
+  top: 2631px;
+}
+.sedan {
+  width: 156px;
+  height: 95px;
+  position: static;
+}
+.rectangle-23 {
+  background: #fffafa;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #121212;
+  border-width: 1px;
+  width: 156px;
+  height: 95px;
+  position: absolute;
+  left: calc(50% - 644px);
+  top: 2708px;
+}
+.saloons {
+  width: 126px;
+  height: 40.29px;
+  position: absolute;
+  left: calc(50% - 629px);
+  top: 2726.68px;
+  overflow: visible;
+}
+.sedans {
+  color: #616161;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 600px);
+  top: 2771px;
+  width: 67px;
+  height: 22px;
+}
+.convertible {
+  width: 156px;
+  height: 95px;
+  position: static;
+}
+.rectangle-29 {
+  background: #fffafa;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #121212;
+  border-width: 1px;
+  width: 156px;
+  height: 95px;
+  position: absolute;
+  left: calc(50% - -486px);
+  top: 2708px;
+}
+.convertibles {
+  color: #616161;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -508px);
+  top: 2771px;
+  width: 113px;
+  height: 22px;
+}
+.convertible2 {
+  width: 126px;
+  height: 37.87px;
+  position: absolute;
+  left: calc(50% - -501px);
+  top: 2729px;
+  overflow: visible;
+}
+.station {
+  width: 156px;
+  height: 95px;
+  position: static;
+}
+.rectangle-26 {
+  background: #fffafa;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #121212;
+  border-width: 1px;
+  width: 156px;
+  height: 95px;
+  position: absolute;
+  left: calc(50% - 81px);
+  top: 2708px;
+}
+.station-wgns {
+  color: #616161;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 62px);
+  top: 2771px;
+  width: 118px;
+  height: 22px;
+}
+.estate-car {
+  width: 126px;
+  height: 40.06px;
+  position: absolute;
+  left: calc(50% - 69px);
+  top: 2727px;
+  overflow: visible;
+}
+.hatch {
+  width: 156px;
+  height: 95px;
+  position: static;
+}
+.rectangle-25 {
+  background: #fffafa;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #121212;
+  border-width: 1px;
+  width: 156px;
+  height: 95px;
+  position: absolute;
+  left: calc(50% - 274px);
+  top: 2708px;
+}
+.hatchbacks {
+  color: #616161;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 250px);
+  top: 2771px;
+  width: 107px;
+  height: 22px;
+}
+.hatchback {
+  width: 126px;
+  height: 43.73px;
+  position: absolute;
+  left: calc(50% - 259px);
+  top: 2723px;
+  overflow: visible;
+}
+.coupe {
+  width: 156px;
+  height: 95px;
+  position: static;
+}
+.rectangle-27 {
+  background: #fffafa;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #121212;
+  border-width: 1px;
+  width: 156px;
+  height: 95px;
+  position: absolute;
+  left: calc(50% - -106px);
+  top: 2708px;
+}
+.coupes {
+  color: #616161;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -150px);
+  top: 2771px;
+  width: 67px;
+  height: 22px;
+}
+.coupe2 {
+  width: 126px;
+  height: 39.18px;
+  position: absolute;
+  left: calc(50% - -121px);
+  top: 2728px;
+  overflow: visible;
+}
+.suv {
+  width: 156px;
+  height: 95px;
+  position: static;
+}
+.rectangle-24 {
+  background: #fffafa;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #121212;
+  border-width: 1px;
+  width: 156px;
+  height: 95px;
+  position: absolute;
+  left: calc(50% - 459px);
+  top: 2708px;
+}
+.su-vs {
+  color: #616161;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 406px);
+  top: 2771px;
+  width: 49px;
+  height: 22px;
+}
+.suv2 {
+  width: 126px;
+  height: 48.61px;
+  position: absolute;
+  left: calc(50% - 444px);
+  top: 2718px;
+  overflow: visible;
+}
+.sports-car {
+  width: 156px;
+  height: 95px;
+  position: static;
+}
+.rectangle-28 {
+  background: #fffafa;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #121212;
+  border-width: 1px;
+  width: 156px;
+  height: 95px;
+  position: absolute;
+  left: calc(50% - -296px);
+  top: 2708px;
+}
+.sports-cars {
+  color: #616161;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -322px);
+  top: 2771px;
+  width: 104px;
+  height: 22px;
+}
+.sports-car2 {
+  width: 126px;
+  height: 39.2px;
+  position: absolute;
+  left: calc(50% - -311px);
+  top: 2728px;
+  overflow: visible;
+}
+.browse-by-manufacturer {
+  width: 1006px;
+  height: 462px;
+  position: static;
+}
+.browse-by-car-manufacturer {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 644px);
+  top: 2859px;
+}
+.abarth-alfa-romeo-alpine-aston-martin-audi-bentley-bmw-byd-citroen-cupra-dacia {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 644px);
+  top: 2925px;
+}
+.ds-ferrari-fiat-ford-genesis-gwm-ora-honda-hyundai-ineos-jaguar-jeep {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 419px);
+  top: 2925px;
+}
+.kia-lamborghini-land-rover-lexus-lotus-maserati-mazda-mc-laren-mercedes-mg-mini {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 194px);
+  top: 2925px;
+}
+.mitsubishi-nissan-peugeot-polestar-porsche-renault-rolls-royce-seat-skoda-smart-ssang-yong {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -31px);
+  top: 2925px;
+}
+.subaru-suzuki-tesla-toyota-vauxhall-volkswagen-volvo {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -256px);
+  top: 2925px;
+}
+.popular-offroad {
+  width: 1372px;
+  height: 638px;
+  position: static;
+}
+.jeep {
+  background: #fafaf5;
+  border-radius: 24px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  border-width: 2px;
+  width: 395px;
+  height: 444px;
+  position: absolute;
+  left: calc(50% - -228px);
+  top: 2030px;
+  overflow: hidden;
+}
+.lambo {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 600;
+  position: absolute;
+  left: 24px;
+  bottom: 98px;
+}
+.starting-from-48-100 {
+  color: #426b1f;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 600;
+  position: absolute;
+  left: 24px;
+  bottom: 68px;
+}
+.mask-group {
+  position: absolute;
+  inset: 0;
+}
+.noonbrew-zi-cb-4-e-kmak-unsplash {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 148px;
+  top: 0px;
+  object-fit: cover;
+}
+.car-2018-off-roading-off-road-racing-wallpaper-preview-1 {
+  width: 395px;
+  height: 295px;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  object-fit: cover;
+}
+.explore-more-btn {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-83 {
+  background: #ff6000;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 350px;
+  height: 36px;
+  position: absolute;
+  left: 24px;
+  top: 385px;
+}
+.view-more {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 141px;
+  top: 387px;
+  width: 115px;
+  height: 27px;
+}
+.nissan2 {
+  background: #fafaf5;
+  border-radius: 24px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  border-width: 2px;
+  width: 395px;
+  height: 444px;
+  position: absolute;
+  left: calc(50% - 198px);
+  top: 2030px;
+  overflow: hidden;
+}
+.nissan3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 600;
+  position: absolute;
+  left: 24px;
+  bottom: 98px;
+}
+.starting-from-41-900 {
+  color: #426b1f;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 600;
+  position: absolute;
+  left: 24px;
+  bottom: 68px;
+}
+._1149396-3840-x-2160-desktop-4-k-off-road-driving-wallpaper-image-1 {
+  width: 395px;
+  height: 296px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+._80-series {
+  background: #fafaf5;
+  border-radius: 24px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  border-width: 2px;
+  width: 395px;
+  height: 444px;
+  position: absolute;
+  left: calc(50% - 624px);
+  top: 2030px;
+  overflow: hidden;
+}
+.porsche2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 700;
+  position: absolute;
+  left: 24px;
+  bottom: 98px;
+}
+.starting-from-32-500 {
+  color: #426b1f;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 700;
+  position: absolute;
+  left: 24px;
+  bottom: 68px;
+}
+.custom-toyota-80-series-land-cruiser-53-1 {
+  width: 395px;
+  height: 296px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+.view-more2 {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 141px;
+  top: 387px;
+  width: 143px;
+  height: 27px;
+}
+.trending-1 {
+  width: 101px;
+  height: 101px;
+  position: absolute;
+  left: calc(50% - 51px);
+  top: 1836px;
+  object-fit: cover;
+}
+.popular-off-road-vehicles {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 220px);
+  top: 1938px;
+}
+.arrows2 {
+  width: 1372px;
+  height: 72px;
+  position: static;
+}
+.left-arrow2 {
+  width: 53px;
+  height: 72px;
+  position: static;
+}
+.ellipse-23 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ff6000;
+  border-width: 1px;
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  left: 34px;
+  top: 2189px;
+}
+.div3 {
+  color: #ff6000;
+  text-align: left;
+  font-family: "OdorMeanChey-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  left: 52px;
+  top: 2180px;
+}
+.right-arrow2 {
+  width: 53px;
+  height: 72px;
+  position: static;
+}
+.ellipse-24 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ff6000;
+  border-width: 1px;
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  left: 1406px;
+  top: 2243px;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) scale(1, 1);
+}
+.div4 {
+  color: #ff6000;
+  text-align: left;
+  font-family: "OdorMeanChey-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  left: 1388px;
+  top: 2252px;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) scale(1, 1);
+}
+.hottest-cars {
+  width: 1372px;
+  height: 629px;
+  position: static;
+}
+.lamborghini2 {
+  background: #fafaf5;
+  border-radius: 24px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  border-width: 2px;
+  width: 395px;
+  height: 444px;
+  position: absolute;
+  left: calc(50% - -228px);
+  top: 1335px;
+  overflow: hidden;
+}
+.starting-from-53-400 {
+  color: #426b1f;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 600;
+  position: absolute;
+  left: 24px;
+  bottom: 68px;
+}
+.dsc-01351-1 {
+  width: 395px;
+  height: 296px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+.nissan4 {
+  background: #fafaf5;
+  border-radius: 24px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  border-width: 2px;
+  width: 395px;
+  height: 444px;
+  position: absolute;
+  left: calc(50% - 198px);
+  top: 1335px;
+  overflow: hidden;
+}
+.starting-from-46-200 {
+  color: #426b1f;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 600;
+  position: absolute;
+  left: 24px;
+  bottom: 68px;
+}
+.nissan-skyline-gt-r-skyline-r-34-nissan-gtr-r-34-nissan-wallpaper-preview-1 {
+  width: 395px;
+  height: 296px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+.porsche3 {
+  background: #fafaf5;
+  border-radius: 24px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  border-width: 2px;
+  width: 395px;
+  height: 444px;
+  position: absolute;
+  left: calc(50% - 624px);
+  top: 1335px;
+  overflow: hidden;
+}
+.porsche4 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 600;
+  position: absolute;
+  left: 24px;
+  bottom: 98px;
+}
+.starting-from-68-300 {
+  color: #426b1f;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 600;
+  position: absolute;
+  left: 24px;
+  bottom: 68px;
+}
+._230911-gfp-093046-d-6511-d-50636-b-22-1 {
+  width: 395px;
+  height: 296px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+.ellipse-25 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ff6000;
+  border-width: 1px;
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  left: 34px;
+  top: 1494px;
+}
+.div5 {
+  color: #ff6000;
+  text-align: left;
+  font-family: "OdorMeanChey-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  left: 52px;
+  top: 1485px;
+}
+.ellipse-26 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ff6000;
+  border-width: 1px;
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  left: 1406px;
+  top: 1548px;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) scale(1, 1);
+}
+.div6 {
+  color: #ff6000;
+  text-align: left;
+  font-family: "OdorMeanChey-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  left: 1388px;
+  top: 1557px;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) scale(1, 1);
+}
+.fire-1 {
+  width: 101px;
+  height: 101px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 1150px;
+  object-fit: cover;
+}
+.hottest-cars-on-the-market {
+  color: #121212;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 236px);
+  top: 1252px;
+}
+.opel-group {
+  width: 1289px;
+  height: 470px;
+  position: static;
+}
+.mask-group2 {
+  width: 1289px;
+  height: 470px;
+  position: static;
+}
+.rectangle-21 {
+  background: #000000;
+  border-radius: 20px;
+  width: 1289px;
+  height: 470px;
+  position: absolute;
+  left: calc(50% - 642px);
+  top: 638px;
+}
+.red-opel-astra-sbn-0-bbta-61-frce-1-k-1 {
+  border-radius: 20px;
+  width: 1289px;
+  height: 470px;
+  position: absolute;
+  left: calc(50% - 642px);
+  top: 638px;
+  object-fit: cover;
+}
+.rectangle-22 {
+  background: rgba(18, 18, 18, 0.1);
+  border-radius: 20px;
+  width: 1289px;
+  height: 470px;
+  position: absolute;
+  left: calc(50% - 642px);
+  top: 638px;
+}
+.get-yours-now {
+  width: 328px;
+  height: 55px;
+  position: static;
+}
+.rectangle-84 {
+  background: #ff6000;
+  border-radius: 40px;
+  width: 249px;
+  height: 55px;
+  position: absolute;
+  left: calc(50% - 567px);
+  top: 946px;
+}
+.get-yours-now2 {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 544px);
+  top: 950px;
+  width: 305px;
+  height: 46px;
+}
+.opel-astra {
+  color: #fffafa;
+  text-align: left;
+  font-family: "Outfit-Black", sans-serif;
+  font-size: 27px;
+  font-weight: 900;
+  position: absolute;
+  left: calc(50% - 567px);
+  top: 713px;
+}
+.sporty-confident-stance-a-new-uncluttered-interior-and-state-of-the-art-technology {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Outfit-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  left: calc(50% - 567px);
+  top: 761px;
+}
+.with-savings-of-up-to-3-000 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 567px);
+  top: 847px;
+}
+.with-savings-of-up-to-3-000-span {
+  color: #ffffff;
+  font-family: "Outfit-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.with-savings-of-up-to-3-000-span2 {
+  color: #ffffff;
+  font-family: "Outfit-ExtraBold", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+}
+.model-shown-opel-astra-ultimate-petrol-subject-to-availability-ts-cs-apply-more {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 567px);
+  top: 1047px;
+}
