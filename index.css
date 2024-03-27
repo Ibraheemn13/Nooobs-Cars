@@ -401,6 +401,8 @@ header {
 }
 .convertible {
   position: absolute;
+  margin-top: 0px;
+  margin-left: 5px;
   inset: 0;
 }
 .rectangle-29 {
@@ -617,6 +619,65 @@ header {
 }
 
 /* BROWSE CARS BY TYPE */
+
+
+/* FOOTER */
+ .footer-back {
+  background-color: #000000;
+  color: #ffffff; /* White text color */
+  margin-top: 350px;
+  height: 310px;
+}
+
+.navLogo {
+  margin-left: 10px; /* Adjust as needed */
+  margin-top: 20px; /* Adjust as needed */
+}
+
+
+.list-container {
+  display: flex;
+}
+
+.list-column {
+  flex: 1;
+  padding: 0 20px;
+  text-align: center; /* Center-align content */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Left-align list items */
+}
+
+li {
+  margin-bottom: 2px;
+  margin-left: 15px;
+}
+
+.rectangle-52 {
+  background: #fb4729;
+  border-radius: 25px;
+  width: 1285px;
+  height: 44px;
+  position: absolute;
+  margin-left: 20px;
+}
+.copyright-2024-all-rights-reserved {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  position: absolute;
+  margin-left: 525px;
+  margin-top: 9px;
+}
+/* FOOTER */
+
+
 /* Responsive CODE*/
 @media (max-width: 860px) {
 
