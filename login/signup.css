@@ -184,12 +184,6 @@ body{
 }
 
 
-/* 
-.footer-back{
-    background-color: #000000;
-
-  }
-   */
    .footer-back {
     background-color: #000000;
     color: #ffffff; /* White text color */
@@ -227,4 +221,61 @@ ul {
 li {
     margin-bottom: 2px;
     margin-left: 15px;
+}
+
+
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 576px (e.g., smartphones) */
+@media (max-width: 575.98px) {
+    .nav-class {
+        height: auto;
+        margin: 10px;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .navLogo {
+        margin: 10px 0;
+    }
+
+    .navbtn {
+        display: block;
+    }
+
+    .login-card {
+        max-width: 100%;
+    }
+}
+
+/* For screens between 576px and 991.98px (e.g., tablets) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+}
+
+/* For screens larger than 992px (e.g., desktops) */
+@media (min-width: 992px) {
+}
+
+
+/* Footer responsiveness */
+@media (max-width: 767.98px) {
+    .list-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-column {
+        padding: 20px 0;
+    }
 }
