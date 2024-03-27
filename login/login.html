@@ -93,7 +93,7 @@
                 <div class="form-group">
                     <label for="password"><b>Password</b></label>
                     <input type="password" class="form-control" id="password" placeholder="Enter password">
-                    <small class="form-text text-muted forgot-password"><a href="#">Forgot Password?</a></small>
+                    <small class="form-text text-muted forgot-password"><a href="../forgotpaswd/forgetpasswd.html">Forgot Password?</a></small>
                 </div>
                 <button type="submit" class="btn login-btn">Login</button>
             </form>
@@ -192,7 +192,7 @@
                 return; // Exit function
             }
             
-            // Perform validation or other operations
+            window.location.href = '../emailVerification/VerifyEmail.html'; // Redirect to home page
             
             // Example: Log input values
             console.log("Username/Email:", usernameOrEmail);
