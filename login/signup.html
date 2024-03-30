@@ -81,12 +81,12 @@
     <p><b> &nbsp; &nbsp; &nbsp;Sign Up Details</b></p>
 
 
-    <!-- Login Card -->
+    <!-- Sign Up Card With validations -->
 
     <div class="container">
         <div class="login-card">
             <h2 font><b>Enter Your Credentials</b></h2>
-            <form  action="/submit-form" method="post">
+            <form  action="/submit-form" method="post" onsubmit="return validateForm()">
                 <div class="form-group">
                     <label for="email"><b>Email</b></label>
                     <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email">
@@ -113,6 +113,8 @@
             <p class="signup-link"><b>Already Have an account? <a href="login.html"><u>Login here</u></b></a></p>
         </div>
     </div>
+    
+
 
     <!-- <section class="footer-back">
         <div class="navLogo">
@@ -172,7 +174,19 @@
             
         </center>
     </section>
-    <script src="../script.js"></script>
+    <script>
+      //script
+      function validateForm() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+    </script>
     
 </body>
 </html>
