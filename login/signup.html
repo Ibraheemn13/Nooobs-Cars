@@ -25,6 +25,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
 
 </head>
 <body>
@@ -85,27 +86,27 @@
     <div class="container">
         <div class="login-card">
             <h2 font><b>Enter Your Credentials</b></h2>
-            <form>
+            <form  action="/submit-form" method="post">
                 <div class="form-group">
                     <label for="email"><b>Email</b></label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email">
                 </div>
                 <div class="form-group">
                     <label for="fullname"><b>Full Name</b></label>
-                    <input type="text" class="form-control" id="fullname" placeholder="Enter Full Name">
+                    <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Enter Full Name">
                     
                 </div>
                 <div class="form-group">
                     <label for="password"><b>Password</b></label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter password">
+                    <input type="password" name="password" class="form-control" id="password" placeholder="Enter password">
                 </div>
                 <div class="form-group">
                     <label for="confirmPassword"><b>Confirm Password</b></label>
                     <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password">
                 </div>
                 <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="sendUpdates">
-                    <label class="form-check-label" for="sendUpdates">Send me updates and relevant news</label>
+                    <input type="checkbox" class="form-check-input" id="updates" name="updates">
+                    <label class="form-check-label" for="updates">Send me updates and relevant news</label>
                 </div>
                 <button type="submit" class="btn login-btn">Sign Up</button>
             </form>
@@ -171,6 +172,7 @@
             
         </center>
     </section>
+    <script src="../script.js"></script>
     
 </body>
 </html>

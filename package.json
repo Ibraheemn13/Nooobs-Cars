@@ -1,0 +1,27 @@
+{
+  "name": "nooobs-cars",
+  "version": "1.0.0",
+  "description": "Web Programming Final Project. It is an automobile website, where users can buy and sell their vehicles",
+  "main": "script.js",
+  "scripts": {
+    "devstart": "nodemon script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibraheemn13/Nooobs-Cars.git"
+  },
+  "author": "M Ibraheem Noor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ibraheemn13/Nooobs-Cars/issues"
+  },
+  "homepage": "https://github.com/Ibraheemn13/Nooobs-Cars#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mongoose": "^8.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
