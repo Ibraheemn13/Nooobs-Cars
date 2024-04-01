@@ -6,29 +6,35 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 
-async function saveToDb(email, name, password, updates) {
+async function saveToDb(Email, name, password, updates) {
+
   // Generate OTP
   const otp = Math.floor(100000 + Math.random() * 900000).toString(); // 6-digit OTP
 
-  // Save OTP along with user details in the database
-  const user = new User({
-    Email: email,
-    Name: name,
-    Password: password,
-    Updates: updates,
-    OTP: otp
-  });
-  await user.save();
+  // checking if the updates checkbox is checked or not 
+  const wantsUpdates = updates ? true : false;
 
-  // Send verification email with OTP
-  sendVerificationEmail(email, otp);
 
-  return true;
+  const existingUser = await User.findOne({ Email: Email });
+
+  if (existingUser) {
+    console.log("User already exists with email:", Email);
+
+    return 0;
+  }
+
+
+  // Creating a new user
+  const user = new User({ Email: Email, Name: name, Password: password, Updates: wantsUpdates, OTP: otp })
+
+  // Saving the user into the database
+  await user.save()
+  sendVerificationEmail(Email, otp);
+  return 1;
 }
 
 function sendVerificationEmail(email, otp) {
   // Create a transporter using Ethereal's SMTP transport
-  console.log(process.env.ETHEREAL_SMTP_HOST, process.env.ETHEREAL_SMTP_PORT)
   const transporter = nodemailer.createTransport({
     host: process.env.ETHEREAL_SMTP_HOST,
     port: process.env.ETHEREAL_SMTP_PORT,
@@ -52,7 +58,29 @@ function sendVerificationEmail(email, otp) {
       console.error("Error sending verification email:", error);
     } else {
       console.log("Verification email sent:", info.response);
+      console.log('GET OTP FROM THIS URL: %s', nodemailer.getTestMessageUrl(info));
     }
   });
 }
-module.exports = { saveToDb };
+
+async function submitCode(verificationCode,Email) {
+  if (!verificationCode) {
+    console.log('Please enter the verification code.');
+    return 0;
+  }
+
+  const existingUser = await User.findOne({ Email: Email });
+  console.log(existingUser)
+
+  if (verificationCode === existingUser.OTP) {
+    console.log("USER EMAIL VERIFIED by OTP");
+    return 1;
+  }
+  else {
+    console.log('INVALID OTP');
+    return 0;
+  }
+
+}
+
+module.exports = { saveToDb, submitCode };
