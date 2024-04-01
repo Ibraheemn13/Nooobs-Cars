@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reset Password</title>
   <!-- FRIV Icon -->
@@ -28,137 +29,126 @@
 
 
 
-  
+
 </head>
+
 <body>
-   <section class="nav-back">
+  <section class="nav-back">
     <!-- NavBar -->
-      <!-- --- NAV BAR HTML --- -->
-      <center>
-        <br>
-        <nav class="nav nav-class " id="navid">
-          <!-- NavBar Logo -->
-          <div class="navLogo">
-            <a href="../index.html"><img src="Nooobs logo 1.0.png" alt="Nooobs logo" width="200px"></a>
-          </div>
-
-          <!-- NavBar List -->
-          <ul class="nav nav-list" id="navbarNav">
-            <li class="nav-item">
-              <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Brands</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Experience</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Contact</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>About Us</b></a>
-            </li>
-          </ul>
-
-          <button class="navbtn navbar-toggler" style="color: black;" onclick="showNav()">
-            <span class="navbar-toggler-icon" style="color: #121212;">MENU</span>
-          </button>
-
-        </nav>
-      </center>
+    <!-- --- NAV BAR HTML --- -->
+    <center>
       <br>
-      
+      <nav class="nav nav-class " id="navid">
+        <!-- NavBar Logo -->
+        <div class="navLogo">
+          <a href="../index.html"><img src="Nooobs logo 1.0.png" alt="Nooobs logo" width="200px"></a>
+        </div>
 
-      <button type="menu" class="back-btn"><a href="../login/login.html">&lt;Go Back</a></button>
+        <!-- NavBar List -->
+        <ul class="nav nav-list" id="navbarNav">
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Brands</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Experience</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Contact</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>About Us</b></a>
+          </li>
+        </ul>
 
+        <button class="navbtn navbar-toggler" style="color: black;" onclick="showNav()">
+          <span class="navbar-toggler-icon" style="color: #121212;">MENU</span>
+        </button>
 
-      <H3 style="color: #ffffff"><b>&nbsp; &nbsp; &nbsp;Email Verification</b></H3>
-      <h5 style="color: #ffffff"><b>&nbsp; &nbsp; &nbsp;Verify your Email here</b></h5>
-
-      <!-- --- NAV BAR HTML --- -->
-      <br>
-    </section>
-
+      </nav>
+    </center>
     <br>
 
 
-    <p><b> &nbsp; &nbsp; &nbsp;Enter required details</b></p>
+    <button type="menu" class="back-btn"><a href="../login/login.html">&lt;Go Back</a></button>
 
 
-    <div class="container">
-      <div class="EmailVer1-card">
-        <h2>Email Verification</h2>
-        <input type="text" id="email" placeholder="Enter your email address" />
-        <button type="submit" onclick="sendCode()" class="btn login-btn">Send Code</button>
-      </div>
-      <div class="EmailVer2-card" style="display:none;">
-        <h2>Enter Verification Code</h2>
-        <input type="text" id="verificationCode" placeholder="Enter verification code" />
-        <button type="submit" onclick="submitCode()" class="btn login-btn">Submit Code</button>
-        <button type="submit" onclick="sendCode()" class="btn login-btn">Resend Code</button>
-      </div>
+    <H3 style="color: #ffffff"><b>&nbsp; &nbsp; &nbsp;Email Verification</b></H3>
+    <h5 style="color: #ffffff"><b>&nbsp; &nbsp; &nbsp;Verify your Email here</b></h5>
+
+    <!-- --- NAV BAR HTML --- -->
+    <br>
+  </section>
+
+  <br>
+
+
+  <p><b> &nbsp; &nbsp; &nbsp;Enter required details</b></p>
+
+
+  <div class="container">
+    <div class="EmailVer2-card">
+      <h2>Enter Verification Code</h2>
+      <form action="/emailVerification/verifyEmail" method="post">
+        <input type="text" name="otp" id="verificationCode" placeholder="Enter verification code" required />
+        <button type="submit" class="btn login-btn">Submit Code</button>
+      </form>
+      
+      <!-- <button type="submit" onclick="sendCode()" class="btn login-btn">Resend Code</button> -->
     </div>
-    
+  </div>
 
-    <!-- <section class="footer-back">
-        <div class="navLogo">
+
+
+
+  <section class="footer-back">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="navLogo">
             <a href="#"><img src="Nooobs logo 1.0.png" alt="Nooobs logo" width="200px"></a>
           </div>
-
-        <br>
-        <br>
-        <br>
-
-    </section> -->
-
-
-    <section class="footer-back">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="navLogo">
-                        <a href="#"><img src="Nooobs logo 1.0.png" alt="Nooobs logo" width="200px"></a>
-                    </div>
-                </div>
-            </div>
         </div>
-        <center>
+      </div>
+    </div>
+    <center>
 
-                <div class="list-container">
-                    <div class="list-column">
-                        <h3>Brands</h3>
-                        <ul style="padding-left: 125px;">
-                            <li>Toyota</li>
-                            <li>Nissan</li>
-                            <li>Porsche</li>
-                            <li>Lamborghini</li>
-                            <li>McLaren</li>
-                        </ul>
-                    </div>
-                    <div class="list-column">
-                        <h3>Services</h3>
-                        <ul style="padding-left: 115px;">
-                            <li>Purchase</li>
-                            <li>Finance</li>
-                            <li>Services</li>
-                        </ul>
-                    </div>
-                    <div class="list-column">
-                        <h3>Contact Us</h3>
-                        <ul style="padding-left: 100px;">
-                            <li>Phone Number</li>
-                            <li>Email</li>
-                            <li><a href="https://www.instagram.com/n.o.o.o.b.s/">Instagram</a></li>
-                            <li>Facebook</li>
-                            <li>X</li>
-                        </ul>
-                    </div>
-                </div>
-                
-            
-        </center>
-    </section>
-    
+      <div class="list-container">
+        <div class="list-column">
+          <h3>Brands</h3>
+          <ul style="padding-left: 125px;">
+            <li>Toyota</li>
+            <li>Nissan</li>
+            <li>Porsche</li>
+            <li>Lamborghini</li>
+            <li>McLaren</li>
+          </ul>
+        </div>
+        <div class="list-column">
+          <h3>Services</h3>
+          <ul style="padding-left: 115px;">
+            <li>Purchase</li>
+            <li>Finance</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="list-column">
+          <h3>Contact Us</h3>
+          <ul style="padding-left: 100px;">
+            <li>Phone Number</li>
+            <li>Email</li>
+            <li><a href="https://www.instagram.com/n.o.o.o.b.s/">Instagram</a></li>
+            <li>Facebook</li>
+            <li>X</li>
+          </ul>
+        </div>
+      </div>
 
-<script>
+
+    </center>
+  </section>
+
+
+  <script>
 
     // --- NAV BAR JS ---
     function showNav() {
@@ -175,35 +165,14 @@
       }
     }
 
-    function sendCode() {
-      var email = document.getElementById('email').value;
-      if (!email) {
-        alert('Please enter your email address.');
-        return;
-      }
-      if (!validateEmail(email)) {
-        alert('Please enter a valid email address.');
-        return;
-      }
-      document.querySelector('.EmailVer1-card').style.display = 'none';
-      document.querySelector('.EmailVer2-card').style.display = 'block';
-    }
-    
-    function submitCode() {
-      var verificationCode = document.getElementById('verificationCode').value;
-      if (!verificationCode) {
-        alert('Please enter the verification code.');
-        return;
-      }
-      alert('Email has been verified!');
-      window.location.href = '../index.html'; // Redirect to home page
-    }
-        
+
+
     function validateEmail(email) {
       var re = /\S+@\S+\.\S+/;
       return re.test(email);
     }
-    
-</script>
+
+  </script>
 </body>
+
 </html>
