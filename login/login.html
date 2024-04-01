@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login to N.O.O.O.B.S.</title>
   <!-- FRIV Icon -->
@@ -27,81 +28,84 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
-   <section class="nav-back">
+  <section class="nav-back">
     <!-- NavBar -->
-      <!-- --- NAV BAR HTML --- -->
-      <center>
-        <br>
-        <nav class="nav nav-class " id="navid">
-          <!-- NavBar Logo -->
-          <div class="navLogo">
-            <a href="../index.html"><img src="Nooobs logo 1.0.png" alt="Nooobs logo" width="200px"></a>
-          </div>
-
-          <!-- NavBar List -->
-          <ul class="nav nav-list" id="navbarNav">
-            <li class="nav-item">
-              <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Brands</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Experience</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Contact</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>About Us</b></a>
-            </li>
-          </ul>
-
-          <button class="navbtn navbar-toggler" style="color: black;" onclick="showNav()">
-            <span class="navbar-toggler-icon" style="color: #121212;">MENU</span>
-          </button>
-
-        </nav>
-      </center>
+    <!-- --- NAV BAR HTML --- -->
+    <center>
       <br>
-      
+      <nav class="nav nav-class " id="navid">
+        <!-- NavBar Logo -->
+        <div class="navLogo">
+          <a href="../index.html"><img src="Nooobs logo 1.0.png" alt="Nooobs logo" width="200px"></a>
+        </div>
 
-      <button type="menu" class="back-btn"><a href="#">&lt;Go Back</a></button>
+        <!-- NavBar List -->
+        <ul class="nav nav-list" id="navbarNav">
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Brands</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Experience</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Contact</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>About Us</b></a>
+          </li>
+        </ul>
 
+        <button class="navbtn navbar-toggler" style="color: black;" onclick="showNav()">
+          <span class="navbar-toggler-icon" style="color: #121212;">MENU</span>
+        </button>
 
-      <H3 style="color: #ffffff"><b>&nbsp; &nbsp; &nbsp;LOGIN</b></H3>
-      <h5 style="color: #ffffff"><b>&nbsp; &nbsp; &nbsp; Welcome Back, Please Login to your account</b></h5>
-
-      <!-- --- NAV BAR HTML --- -->
-      <br>
-    </section>
-
+      </nav>
+    </center>
     <br>
 
 
-    <p><b> &nbsp; &nbsp; &nbsp;Login Details</b></p>
+    <button type="menu" class="back-btn"><a href="#">&lt;Go Back</a></button>
 
 
-    <!-- Login Card -->
+    <H3 style="color: #ffffff"><b>&nbsp; &nbsp; &nbsp;LOGIN</b></H3>
+    <h5 style="color: #ffffff"><b>&nbsp; &nbsp; &nbsp; Welcome Back, Please Login to your account</b></h5>
 
-    <div class="container">
-        <div class="login-card">
-            <h2 font><b>Enter Your Credentials</b></h2>
-            <form>
-                <div class="form-group">
-                    <label for="usernameOrEmail"><b>Username/Email</b></label>
-                    <input type="text" class="form-control" id="usernameOrEmail" placeholder="Enter username or email">
-                </div>
-                <div class="form-group">
-                    <label for="password"><b>Password</b></label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter password">
-                    <small class="form-text text-muted forgot-password"><a href="../forgotpaswd/forgetpasswd.html">Forgot Password?</a></small>
-                </div>
-                <button type="submit" class="btn login-btn">Login</button>
-            </form>
-            <p class="signup-link"><b>Don't Have an account? <a href="signup.html"><u>Sign Up</u></b></a></p>
+    <!-- --- NAV BAR HTML --- -->
+    <br>
+  </section>
+
+  <br>
+
+
+  <p><b> &nbsp; &nbsp; &nbsp;Login Details</b></p>
+
+
+  <!-- Login Card -->
+
+  <div class="container">
+    <div class="login-card">
+      <h2 font><b>Enter Your Credentials</b></h2>
+      <form action="/signin-form" method="post">
+        <div class="form-group">
+          <label for="usernameOrEmail"><b>Username/Email</b></label>
+          <input type="text" class="form-control" id="usernameOrEmail" placeholder="Enter username or email"
+            name="email">
         </div>
+        <div class="form-group">
+          <label for="password"><b>Password</b></label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+          <small class="form-text text-muted forgot-password"><a href="../forgotpaswd/forgetpasswd.html">Forgot
+              Password?</a></small>
+        </div>
+        <button type="submit" class="btn login-btn">Login</button>
+      </form>
+      <p class="signup-link"><b>Don't Have an account? <a href="signup.html"><u>Sign Up</u></b></a></p>
     </div>
+  </div>
 
-    <!-- <section class="footer-back">
+  <!-- <section class="footer-back">
         <div class="navLogo">
             <a href="#"><img src="Nooobs logo 1.0.png" alt="Nooobs logo" width="200px"></a>
           </div>
@@ -113,55 +117,55 @@
     </section> -->
 
 
-    <section class="footer-back">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="navLogo">
-                        <a href="#"><img src="Nooobs logo 1.0.png" alt="Nooobs logo" width="200px"></a>
-                    </div>
-                </div>
-            </div>
+  <section class="footer-back">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="navLogo">
+            <a href="#"><img src="Nooobs logo 1.0.png" alt="Nooobs logo" width="200px"></a>
+          </div>
         </div>
-        <center>
+      </div>
+    </div>
+    <center>
 
-                <div class="list-container">
-                    <div class="list-column">
-                        <h3>Brands</h3>
-                        <ul style="padding-left: 125px;">
-                            <li>Toyota</li>
-                            <li>Nissan</li>
-                            <li>Porsche</li>
-                            <li>Lamborghini</li>
-                            <li>McLaren</li>
-                        </ul>
-                    </div>
-                    <div class="list-column">
-                        <h3>Services</h3>
-                        <ul style="padding-left: 115px;">
-                            <li>Purchase</li>
-                            <li>Finance</li>
-                            <li>Services</li>
-                        </ul>
-                    </div>
-                    <div class="list-column">
-                        <h3>Contact Us</h3>
-                        <ul style="padding-left: 100px;">
-                            <li>Phone Number</li>
-                            <li>Email</li>
-                            <li><a href="https://www.instagram.com/n.o.o.o.b.s/">Instagram</a></li>
-                            <li>Facebook</li>
-                            <li>X</li>
-                        </ul>
-                    </div>
-                </div>
-                
-            
-        </center>
-    </section>
-    
+      <div class="list-container">
+        <div class="list-column">
+          <h3>Brands</h3>
+          <ul style="padding-left: 125px;">
+            <li>Toyota</li>
+            <li>Nissan</li>
+            <li>Porsche</li>
+            <li>Lamborghini</li>
+            <li>McLaren</li>
+          </ul>
+        </div>
+        <div class="list-column">
+          <h3>Services</h3>
+          <ul style="padding-left: 115px;">
+            <li>Purchase</li>
+            <li>Finance</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="list-column">
+          <h3>Contact Us</h3>
+          <ul style="padding-left: 100px;">
+            <li>Phone Number</li>
+            <li>Email</li>
+            <li><a href="https://www.instagram.com/n.o.o.o.b.s/">Instagram</a></li>
+            <li>Facebook</li>
+            <li>X</li>
+          </ul>
+        </div>
+      </div>
 
-<script>
+
+    </center>
+  </section>
+
+  <script src="../script.js"></script>
+  <script>
 
     // --- NAV BAR JS ---
     function showNav() {
@@ -177,41 +181,42 @@
         document.getElementById("navid").classList.remove("nav-class")
       }
     }
-        // Function to handle form submission
-        function handleSubmit(event) {
-            event.preventDefault(); // Prevent form submission
-            
-            // Get input values
-            var usernameOrEmail = document.getElementById("usernameOrEmail").value;
-            var password = document.getElementById("password").value;
-            
-            // Check if username or password is blank
-            if (!usernameOrEmail.trim() || !password.trim()) {
-                // Display error message
-                alert("Please enter both username/email and password.");
-                return; // Exit function
-            }
-            
-            window.location.href = '../emailVerification/VerifyEmail.html'; // Redirect to home page
-            
-            // Example: Log input values
-            console.log("Username/Email:", usernameOrEmail);
-            console.log("Password:", password);
-        }
-        
-        // Function to handle "Sign Up" link click
-        function handleSignUpClick(event) {
-            event.preventDefault(); // Prevent link default action
-            
-            // Perform sign-up related operations
-            
-            // Example: Redirect to sign-up page
-            window.location.href = "signup.html";
-        }
-        
-        // Attach event listeners
-        document.querySelector("form").addEventListener("submit", handleSubmit);
-        document.querySelector(".signup-link a").addEventListener("click", handleSignUpClick);
-</script>
+    // Function to handle form submission
+    // function handleSubmit(event) {
+    //     event.preventDefault(); // Prevent form submission
+
+    //     // Get input values
+    //     var usernameOrEmail = document.getElementById("usernameOrEmail").value;
+    //     var password = document.getElementById("password").value;
+
+    //     // Check if username or password is blank
+    //     if (!usernameOrEmail.trim() || !password.trim()) {
+    //         // Display error message
+    //         alert("Please enter both username/email and password.");
+    //         return; // Exit function
+    //     }
+
+    //     //window.location.href = '../emailVerification/VerifyEmail.html'; // Redirect to home page
+
+    //     // Example: Log input values
+    //     console.log("Username/Email:", usernameOrEmail);
+    //     console.log("Password:", password);
+    // }
+
+    // Function to handle "Sign Up" link click
+    function handleSignUpClick(event) {
+      event.preventDefault(); // Prevent link default action
+
+      // Perform sign-up related operations
+
+      // Example: Redirect to sign-up page
+      window.location.href = "signup.html";
+    }
+
+    // Attach event listeners
+    document.querySelector("form").addEventListener("submit", handleSubmit);
+    document.querySelector(".signup-link a").addEventListener("click", handleSignUpClick);
+  </script>
 </body>
+
 </html>
