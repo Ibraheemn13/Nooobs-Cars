@@ -22,15 +22,19 @@ app.get('/', (req, res) => {
 // Route to handle the form submission
 app.post('/submit-form', async (req, res) => {
     try {
-        const { email, fullname, password, updates} = req.body;
-        await saveToDb(email, fullname, password, updates);
-
-        // res.send('Form submitted and user saved.');
-        res.send(`<script>alert('Form submitted and user saved.'); window.location.href="/";</script>`);
+        const { email, fullname, password, updates } = req.body;
+        saved = await saveToDb(email, fullname, password, updates);
+        if (saved) {
+            // res.send('Form submitted and user saved.');
+            res.send(`<script>alert('Form submitted and user saved.'); window.location.href="/";</script>`);
+        }
+        else {
+            res.send(`<script>alert('User already exsists with this email.'); window.location.href="/";</script>`);
+        }
 
     } catch (error) {
         res.send(`<script>alert('Error saving user.'); window.location.href="/";</script>`);
-        // console.error('Detailed error: ', error.message); // Log detailed error message
+        console.error('Detailed error: ', error.message); // Log detailed error message
     }
 
 });
@@ -58,9 +62,24 @@ async function saveToDb(Email, name, password, updates) {
     // checking if the updates checkbox is checked or not 
     const wantsUpdates = updates ? true : false;
 
+
+    const existingUser = await User.findOne({ Email: Email });
+
+    if (existingUser) {
+        console.log("User already exists with email:", Email);
+        // Optionally, return a value or throw an error to indicate user existence
+        return 0; // Or throw new Error('User already exists');
+    }
+
+
     // Creating a new user
     const user = new User({ Email: Email, Name: name, Password: password, Updates: wantsUpdates })
 
+
+
+
     // Saving the user into the database
     await user.save()
+    return 1;
 }
+
