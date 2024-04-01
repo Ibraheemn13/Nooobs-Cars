@@ -1,30 +1,42 @@
-const mongoose = require("mongoose")
-const { saveToDb } = require('./signup');
+const express = require("express");
+const path = require("path");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+const nodemailer = require("nodemailer");
 const { signInFun } = require('./signin');
-const path = require('path');
-const express = require('express');
+const { saveToDb } = require("./signup");
+
+
+// Load environment variables from .env file
+require("dotenv").config();
 
 const app = express();
 const port = 3000;
 
-// using static files to use with express
+// Middleware to parse the body of HTTP requests
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use(express.static('login'));
 app.use(express.static('./'));
 
-// Middleware to parse the body of HTTP requests
-app.use(express.urlencoded({ extended: true }));
 
-// FOR SIGNUP PAGE
 
-// Route to handle GET request
+// // FOR SIGNUP PAGE
+
+// // Route to handle GET request
 app.get('/signup', (req, res) => {
     res.sendFile(path.join(__dirname, '/login/signup.html'));
+});
+
+app.get('/emailVerify', (req, res) => {
+    res.sendFile(path.join(__dirname, './emailVerification/VerifyEmail.html'));
 });
 
 // Route to handle the form submission
 app.post('/submit-form', async (req, res) => {
     try {
         const { email, fullname, password, updates } = req.body;
+        //console.log("email from signup is ", email)
         saved = await saveToDb(email, fullname, password, updates);
         if (saved) {
             // res.send('Form submitted and user saved.');
@@ -39,6 +51,38 @@ app.post('/submit-form', async (req, res) => {
         console.error('SignUp Error: ', error.message); // Log detailed error message
     }
 
+});
+
+
+
+
+
+// FOR EMAIL VERIFICATION
+
+// Route to handle GET request for email verification page
+app.get("/emailVerification/verifyEmail", (req, res) => {
+    res.sendFile(path.join(__dirname, "/emailVerification/verifyEmail.html"));
+});
+
+// Route to handle POST request for OTP verification
+app.post("/emailVerification/verifyEmail.html", async (req, res) => {
+    try {
+        const { email, otp } = req.body;
+        // Implement OTP verification logic here
+        res.send(
+            '<script>alert("Email verified successfully. Redirecting to homepage."); window.location.href="/";</script>'
+        );
+    } catch (error) {
+        console.error("Error verifying email:", error.message);
+        res.send(
+            '<script>alert("Error verifying email."); window.location.href="/verifyEmail.html";</script>'
+        );
+    }
+});
+
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
 });
 
 
@@ -76,14 +120,6 @@ app.post('/signin-form', async (req, res) => {
 
 
 
-
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
-
-
-
-
 // DATABASE STUFF
 
 // Connsecting to database nooobsCars
@@ -93,4 +129,3 @@ mongoose.connect("mongodb://localhost/nooobsCars",)
     // If not connected
     .catch(err => console.error("Could not connect to MongoDB:", err));
 
-// calling the function to save the new user in database

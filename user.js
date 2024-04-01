@@ -22,7 +22,12 @@ const userSchema = new mongoose.Schema({
     },
     Updates: {
         type: Boolean
+    },
+    OTP: {
+        type: String,
+        required: true
     }
+    
 })
 
 // Exporting the model to use it in other files
