@@ -1,8 +1,8 @@
 const mongoose = require("mongoose")
-const User = require("./user")
-
+const { saveToDb } = require('./signup');
+const { signInFun } = require('./signin');
+const path = require('path');
 const express = require('express');
-const bodyParser = require('body-parser');
 
 const app = express();
 const port = 3000;
@@ -14,9 +14,11 @@ app.use(express.static('./'));
 // Middleware to parse the body of HTTP requests
 app.use(express.urlencoded({ extended: true }));
 
+// FOR SIGNUP PAGE
+
 // Route to handle GET request
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/login/signup.html');
+app.get('/signup', (req, res) => {
+    res.sendFile(path.join(__dirname, '/login/signup.html'));
 });
 
 // Route to handle the form submission
@@ -26,18 +28,54 @@ app.post('/submit-form', async (req, res) => {
         saved = await saveToDb(email, fullname, password, updates);
         if (saved) {
             // res.send('Form submitted and user saved.');
-            res.send(`<script>alert('Form submitted and user saved.'); window.location.href="/";</script>`);
+            res.send(`<script>alert('Form submitted and user saved.'); window.location.href="/login/signup.html";</script>`);
         }
         else {
-            res.send(`<script>alert('User already exsists with this email.'); window.location.href="/";</script>`);
+            res.send(`<script>alert('User already exsists with this email.'); window.location.href="/login/signup.html";</script>`);
         }
 
     } catch (error) {
-        res.send(`<script>alert('Error saving user.'); window.location.href="/";</script>`);
-        console.error('Detailed error: ', error.message); // Log detailed error message
+        res.send(`<script>alert('Error saving user.'); window.location.href="/login/signup.html";</script>`);
+        console.error('SignUp Error: ', error.message); // Log detailed error message
     }
 
 });
+
+
+
+
+// FOR SIGNIN PAGE
+
+// Route to handle GET request
+app.get('/signin', (req, res) => {
+    res.sendFile(path.join(__dirname, '/login/login.html'));
+});
+
+// Route to handle the form submission
+app.post('/signin-form', async (req, res) => {
+    try {
+        const { email, password } = req.body;
+        console.log("called from scriptjs", password);
+        const result = await signInFun(email, password);
+        if (result === 1) {
+            // Authentication successful
+            res.send(`<script>alert('User logged in successfully.'); window.location.href="/";</script>`);
+        } else if (result === 0) {
+            // Authentication failed
+            res.send(`<script>alert('Authentication failed. Wrong email or password.'); window.location.href="/login/login.html";</script>`);
+        }
+
+    } catch (error) {
+        res.send(`<script>alert('Error saving user.'); window.location.href="/login/login.html";</script>`);
+        console.error('SignIn Error: ', error.message); // Log detailed error message
+
+    }
+
+});
+
+
+
+
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
@@ -56,30 +94,3 @@ mongoose.connect("mongodb://localhost/nooobsCars",)
     .catch(err => console.error("Could not connect to MongoDB:", err));
 
 // calling the function to save the new user in database
-
-async function saveToDb(Email, name, password, updates) {
-
-    // checking if the updates checkbox is checked or not 
-    const wantsUpdates = updates ? true : false;
-
-
-    const existingUser = await User.findOne({ Email: Email });
-
-    if (existingUser) {
-        console.log("User already exists with email:", Email);
-        // Optionally, return a value or throw an error to indicate user existence
-        return 0; // Or throw new Error('User already exists');
-    }
-
-
-    // Creating a new user
-    const user = new User({ Email: Email, Name: name, Password: password, Updates: wantsUpdates })
-
-
-
-
-    // Saving the user into the database
-    await user.save()
-    return 1;
-}
-

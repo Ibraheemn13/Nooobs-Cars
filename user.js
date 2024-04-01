@@ -1,5 +1,4 @@
 const mongoose = require("mongoose")
-const { boolean } = require("webidl-conversions")
 
 // creating a schema for signup page
 const userSchema = new mongoose.Schema({
