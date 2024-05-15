@@ -37,6 +37,18 @@ app.get('/api/users', async (req, res) => {
     }
 });
 
+// API endpoint to delete a user by ID
+app.delete('/api/users/:id', async (req, res) => {
+    try {
+        const userId = req.params.id;
+        await User.findByIdAndDelete(userId);
+        res.status(200).send('User deleted');
+    } catch (error) {
+        console.error('Error deleting user:', error.message);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
 // // FOR SIGNUP PAGE
 
 // // Route to handle GET request

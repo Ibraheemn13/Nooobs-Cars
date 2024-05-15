@@ -31,8 +31,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 createdAtCell.textContent = new Date(user.CreatedAt).toISOString();
                 row.appendChild(createdAtCell);
 
+                const deleteCell = document.createElement('td');
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', () => {
+                    deleteUser(user._id, row);
+                });
+                deleteCell.appendChild(deleteButton);
+                row.appendChild(deleteCell);
+
                 table.appendChild(row);
             });
         })
         .catch(error => console.error('Error fetching users:', error));
 });
+
+function deleteUser(userId, row) {
+    fetch(`/api/users/${userId}`, {
+        method: 'DELETE'
+    })
+    .then(response => {
+        if (response.ok) {
+            row.remove();
+        } else {
+            console.error('Failed to delete user');
+        }
+    })
+    .catch(error => console.error('Error deleting user:', error));
+}
