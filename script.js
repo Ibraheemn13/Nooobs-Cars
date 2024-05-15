@@ -92,7 +92,7 @@ app.post("/emailVerification/verifyEmail", async (req, res) => {
         const { otp } = req.body;
         const verified = await submitCode(otp, Email, onetp);
         if (verified) {
-            saved = await saveToDb(Email, name, passwd, update, onetp);
+            saved = await saveToDb(Email, name, passwd, update);
             if (saved) {
                 res.send(`<script>alert('Email Verified and user saved.'); window.location.href="/";</script>`);
             }
