@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const nodemailer = require("nodemailer");
 const { signInFun } = require('./signin');
 const { saveToDb, submitCode } = require("./signup");
+const User = require('./user');
 
 
 // Load environment variables from .env file
@@ -21,6 +22,16 @@ app.use(express.static('login'));
 app.use(express.static('./'));
 
 
+// // Add the new API endpoint to get users data
+app.get('/api/users', async (req, res) => {
+    try {
+        const users = await User.find();
+        res.json(users);
+    } catch (error) {
+        console.error('Error fetching users:', error.message);
+        res.status(500).send('Internal Server Error');
+    }
+});
 
 // // FOR SIGNUP PAGE
 

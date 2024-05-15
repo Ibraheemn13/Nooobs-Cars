@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="adminPanel.css">
+    <link rel="stylesheet" href="dashBoard.css">
+    <script src="adminPanel.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <title>Nooobs | AdminPanel</title>
+</head>
+
+<body>
+    <!-- Static HTML content can be inserted here instead of EJS include -->
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text">Nooobs Cars | DashBoard</span>
+        </div>
+        <div class="dashboard">
+            <div class="dashBoard-cards">
+                <div class="card">
+                    <div class="header">
+                        <h3>Users</h3>
+                        <h4>1234</h4> <!-- Static value -->
+                    </div>
+                    <div class="icon">
+                        <img src="/Images/userIcon.png" alt="" style="width: 100%; height: 100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h3>Visitors</h3>
+                        <h4>5678</h4> <!-- Static value -->
+                    </div>
+                    <div class="icon">
+                        <img src="/Images/visitorIcon.png" alt="" style="width: 100%; height: 100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h3>Earnings</h3>
+                        <h4>$9,500</h4> <!-- Static value -->
+                    </div>
+                    <div class="icon">
+                        <img src="/Images/earningsIcon.png" alt="" style="width: 100%; height: 100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h3>Running</h3>
+                        <h4>5</h4> <!-- Static value -->
+                    </div>
+                    <div class="icon">
+                        <img src="/Images/runningIcon.png" alt="" style="width: 100%; height: 100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h3>Featured</h3>
+                        <h4>12</h4> <!-- Static value -->
+                    </div>
+                    <div class="icon">
+                        <img src="/Images/featuredIcon.png" alt="" style="width: 100%; height: 100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <h3>Pendings</h3>
+                        <h4>3</h4> <!-- Static value -->
+                    </div>
+                    <div class="icon">
+                        <img src="/Images/pendingIcon.png" alt="" style="width: 100%; height: 100%">
+                    </div>
+                </div>
+            </div>
+            <div class="dashBoard-charts">
+                <canvas id="myChart" style="width:100%;max-width:750px"></canvas>
+                <canvas id="myChart1" style="width:100%;max-width:750px"></canvas>
+            </div>
+
+            <!-- side bar of dashboard -->
+            <div class="sidebar close">
+                <div class="logo-details">
+                    <i class='bx bxl-c-plus-plus'></i>
+                    <span class="logo_name">Nooobs Cars</span>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="/views/admin/dashboard.html">
+                            <i class='bx bx-grid-alt'></i>
+                            <span class="link_name">Dashboard</span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="/views/admin/dashboard.html">Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/views/admin/viewUsers.html">
+                            <i class='bx bx-grid-alt'></i>
+                            <span class="link_name">Customers</span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="/views/admin/viewUsers.html">Customers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/admin/generateReport">
+                            <i class='bx bx-line-chart'></i>
+                            <span class="link_name">Generate Report</span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="/admin/generateReport">Generate Report</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/admin/viewFeedBack">
+                            <i class='bx bx-compass'></i>
+                            <span class="link_name">View FeedBack</span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="/admin/viewFeedBack">View FeedBack</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/admin/paymentDetails">
+                            <i class='bx bx-cog'></i>
+                            <span class="link_name">Advertisement Details</span>
+                        </a>
+                        <ul class="sub-menu blank">
+                            <li><a class="link_name" href="/admin/paymentDetails">Advertisement Details</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="profile-details">
+                            <div class="profile-content">
+                                <!--<img src="image/profile.jpg" alt="profileImg">-->
+                            </div>
+                            <div class="name-job">
+                                <div class="profile_name">Name</div>
+                                <div class="job">Admin</div>
+                            </div>
+                            <i class='bx bx-log-out' id="logOut"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <script>
+            var xValues = ["Maula Jatt", "3-1diots", "PK", "Spider Man", "Iron Man"];
+            var yValues = [55, 49, 44, 24, 15];
+            var barColors = ["red", "green", "blue", "orange", "brown"];
+
+            new Chart("myChart", {
+                type: "bar",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: "Trending Featured Movies"
+                    }
+                }
+            });
+
+            // =========================================== //
+
+            var xValues1 = ["Maula Jatt", "3-1diots", "PK", "Spider Man", "Iron Man"];
+            var yValues1 = [55, 49, 44, 24, 15];
+            var barColors1 = [
+                "#b91d47",
+                "#00aba9",
+                "#2b5797",
+                "#e8c3b9",
+                "#1e7145"
+            ];
+
+            new Chart("myChart1", {
+                type: "pie",
+                data: {
+                    labels: xValues1,
+                    datasets: [{
+                        backgroundColor: barColors1,
+                        data: yValues1
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "Today's Movie Bookings"
+                    }
+                }
+            });
+
+
+            const logOutBtn = document.getElementById("logOut");
+                logOutBtn.addEventListener("click", () => {
+                    location.href = "/admin/logout";
+                });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.dashboard, .card, .dashBoard-cards, .dashBoard-charts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard{
+    flex-direction: column;
+    margin: 2rem 4rem;
+}
+.card{
+    border: 2px solid black;
+    border-left: 8px solid #1d1b31;
+    font-size: 1.5rem;
+    width: 20rem;
+    height: 8rem;
+    padding: 0.5em;
+    margin: 0.5rem;
+}
+
+.card .header {
+    margin: 0 2rem 0.5rem 0.5rem;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+}
+
+.dashBoard-cards{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.dashBoard-charts{
+    width: 50%;
+    margin-top: 1rem;
+}

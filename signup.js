@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-var userName;
+
 async function saveToDb(Email, name, password, updates) {
 
   // Generate OTP
@@ -23,7 +23,7 @@ async function saveToDb(Email, name, password, updates) {
     return 0;
   }
 
-  userName = name;
+
   // Creating a new user
   const user = new User({ Email: Email, Name: name, Password: password, Updates: wantsUpdates, OTP: otp })
 
@@ -49,7 +49,7 @@ function sendVerificationEmail(email, otp) {
     from: "haley.mraz@ethereal.email",
     to: email,
     subject: "Verify Your Email Address",
-    text: `Dear ${userName},\n\nYour OTP (One-Time Password) for email verification is: ${otp}.\n\nRegards,\nNOOOBS`,
+    text: `Your OTP (One-Time Password) for email verification is: ${otp}`,
   };
 
   // Send email
@@ -63,7 +63,7 @@ function sendVerificationEmail(email, otp) {
   });
 }
 
-async function submitCode(verificationCode, Email) {
+async function submitCode(verificationCode,Email) {
   if (!verificationCode) {
     console.log('Please enter the verification code.');
     return 0;

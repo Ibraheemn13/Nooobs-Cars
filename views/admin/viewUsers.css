@@ -1,0 +1,45 @@
+.users-data{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column ;
+}
+.searchBox{
+    margin-top: 1rem;
+}
+#myInput {
+    background-image: url('/Images/search-icon0.png');
+    background-position: 8px 13px;
+    background-repeat: no-repeat;
+    width: 60%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #263238;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 60%;
+    border: 1px solid #ddd;
+    margin: 1.5rem auto 1rem auto;
+}
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+.btn {
+    border: 2px solid #263238;
+    color: #263238;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 25px 15px;
+}
+th, .btn:hover {
+    background-color: #263238;
+    color: #fff;
+}
