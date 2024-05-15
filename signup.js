@@ -7,7 +7,7 @@ dotenv.config();
 
 var userName;
 
-async function saveToDb(Email, name, password, updates, onetp) {
+async function saveToDb(Email, name, password, updates) {
 
   // checking if the updates checkbox is checked or not 
   const wantsUpdates = updates ? true : false;
@@ -24,7 +24,7 @@ async function saveToDb(Email, name, password, updates, onetp) {
   userName = name;
 
   // Creating a new user
-  const user = new User({ Email: Email, Name: name, Password: password, Updates: wantsUpdates, OTP: onetp })
+  const user = new User({ Email: Email, Name: name, Password: password, Updates: wantsUpdates})
 
   // Saving the user into the database
   await user.save()
