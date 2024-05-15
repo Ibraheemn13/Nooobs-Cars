@@ -48,7 +48,7 @@ function sendVerificationEmail(email, otp) {
     from: "haley.mraz@ethereal.email",
     to: email,
     subject: "Verify Your Email Address",
-    text: `Dear ${userName},\n\nYour OTP (One-Time Password) for email verification is: ${otp}.\n\nRegards,\nNOOOBS`,
+    text: `Dear User,\n\nYour OTP (One-Time Password) for email verification is: ${otp}.\n\nRegards,\nNOOOBS`,
   };
 
   // Send email
