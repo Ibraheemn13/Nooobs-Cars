@@ -5,11 +5,9 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
+var userName;
 
-async function saveToDb(Email, name, password, updates) {
-
-  // Generate OTP
-  const otp = Math.floor(100000 + Math.random() * 900000).toString(); // 6-digit OTP
+async function saveToDb(Email, name, password, updates, onetp) {
 
   // checking if the updates checkbox is checked or not 
   const wantsUpdates = updates ? true : false;
@@ -23,13 +21,14 @@ async function saveToDb(Email, name, password, updates) {
     return 0;
   }
 
+  userName = name;
 
   // Creating a new user
-  const user = new User({ Email: Email, Name: name, Password: password, Updates: wantsUpdates, OTP: otp })
+  const user = new User({ Email: Email, Name: name, Password: password, Updates: wantsUpdates, OTP: onetp })
 
   // Saving the user into the database
   await user.save()
-  sendVerificationEmail(Email, otp);
+
   return 1;
 }
 
@@ -49,7 +48,7 @@ function sendVerificationEmail(email, otp) {
     from: "haley.mraz@ethereal.email",
     to: email,
     subject: "Verify Your Email Address",
-    text: `Your OTP (One-Time Password) for email verification is: ${otp}`,
+    text: `Dear ${userName},\n\nYour OTP (One-Time Password) for email verification is: ${otp}.\n\nRegards,\nNOOOBS`,
   };
 
   // Send email
@@ -63,7 +62,7 @@ function sendVerificationEmail(email, otp) {
   });
 }
 
-async function submitCode(verificationCode,Email) {
+async function submitCode(verificationCode, Email, OriginalOTP) {
   if (!verificationCode) {
     console.log('Please enter the verification code.');
     return 0;
@@ -72,15 +71,15 @@ async function submitCode(verificationCode,Email) {
   const existingUser = await User.findOne({ Email: Email });
   console.log(existingUser)
 
-  if (verificationCode === existingUser.OTP) {
-    console.log("USER EMAIL VERIFIED by OTP");
+  if (verificationCode === OriginalOTP) {
+    console.log("User Email Verified by OTP");
     return 1;
   }
   else {
-    console.log('INVALID OTP');
+    console.log('Invalid OTP!');
     return 0;
   }
 
 }
 
-module.exports = { saveToDb, submitCode };
+module.exports = { saveToDb, submitCode, sendVerificationEmail};

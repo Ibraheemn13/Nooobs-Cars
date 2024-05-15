@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const nodemailer = require("nodemailer");
 const { signInFun } = require('./signin');
-const { saveToDb, submitCode } = require("./signup");
+const { saveToDb, submitCode, sendVerificationEmail } = require("./signup");
 const User = require('./user');
 
 
@@ -13,7 +13,11 @@ require("dotenv").config();
 
 const app = express();
 const port = 3000;
-var userEmail;
+
+var name, Email, passwd;
+var update = true;
+
+var onetp = 0;
 
 // Middleware to parse the body of HTTP requests
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -40,26 +44,22 @@ app.get('/signup', (req, res) => {
     res.sendFile(path.join(__dirname, '/login/signup.html'));
 });
 
+
 // Route to handle the form submission
 app.post('/submit-form', async (req, res) => {
-    try {
-        const { email, fullname, password, updates } = req.body;
-        //console.log("email from signup is ", email)
-        saved = await saveToDb(email, fullname, password, updates);
-        if (saved) {
-            userEmail = email;
-            // res.send('Form submitted and user saved.');
-            res.send(`<script>alert('Form submitted and user saved.'); window.location.href="/emailVerification/VerifyEmail.html";</script>`);
-        }
-        else {
-            res.send(`<script>alert('User already exsists with this email.'); window.location.href="/login/signup.html";</script>`);
-        }
+    const { email, fullname, password, updates } = req.body;
+    //console.log("email from signup is ", email)
+    Email = email;
+    name = fullname;
+    passwd = password;
+    update = updates;
 
-    } catch (error) {
-        res.send(`<script>alert('Error saving user.'); window.location.href="/login/signup.html";</script>`);
-        console.error('SignUp Error: ', error.message); // Log detailed error message
-    }
+    // Generate OTP
+    onetp = Math.floor(100000 + Math.random() * 900000).toString(); // 6-digit OTP
 
+    sendVerificationEmail(Email, onetp);
+
+    res.send(`<script>alert('Form submitted'); window.location.href="/emailVerification/VerifyEmail";</script>`);
 });
 
 
@@ -78,13 +78,18 @@ app.get("/emailVerification/verifyEmail", (req, res) => {
 app.post("/emailVerification/verifyEmail", async (req, res) => {
     try {
         const { otp } = req.body;
-        const verified = await submitCode(otp, userEmail);
+        const verified = await submitCode(otp, Email, onetp);
         if (verified) {
-            res.send(`<script>alert('Email Verified.'); window.location.href="/";</script>`
-            );
+            saved = await saveToDb(Email, name, passwd, update, onetp);
+            if (saved) {
+                res.send(`<script>alert('Email Verified and user saved.'); window.location.href="/";</script>`);
+            }
+            else {
+                res.send(`<script>alert('User already exists with this email.'); window.location.href="/login/signup.html";</script>`);
+            }
         }
         else {
-            res.send(`<script>alert('Invalid OTP.'); window.location.href="/";</script>`
+            res.send(`<script>alert('Invalid OTP. User Not saved'); window.location.href="/emailVerification/VerifyEmail.html";</script>`
             );
         }
     } catch (error) {
