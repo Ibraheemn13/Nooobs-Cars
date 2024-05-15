@@ -21,7 +21,8 @@ const userSchema = new mongoose.Schema({
         immutable: true
     },
     Updates: {
-        type: Boolean
+        type: Boolean,
+        default:false
     },
     OTP: {
         type: String,

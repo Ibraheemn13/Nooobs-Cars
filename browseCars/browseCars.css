@@ -1,0 +1,191 @@
+* {
+    font-family: Outfit;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+
+/* --- NAV BAR CSS --- */
+.nav-back {
+    background-color: #343a40;
+
+}
+
+.back-btn {
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-align: left;
+    margin-left: 25pt;
+
+}
+
+.back-btn a {
+    color: #ffffff;
+    /* Black text color */
+
+}
+
+
+.nav-class {
+    background: #d9d9d9;
+    border-radius: 25px;
+    height: 72px;
+    align-items: center;
+    margin: 20px 50px;
+    /* Optional padding for content */
+    display: flex;
+    /* Use flexbox for responsive layout */
+    justify-content: space-between;
+    /* Align items horizontally */
+    z-index: 1000;
+}
+
+.navLogo {
+    margin-left: 15px;
+}
+
+.nav-list {
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Use flexbox for styling */
+}
+
+.nav-item {
+    margin-right: 20px;
+    /* Adjust spacing between items */
+}
+
+.nav-link {
+    color: #121212;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbtn {
+    display: none;
+
+}
+
+/* --- NAV BAR CSS --- */
+
+
+/* --- Hottest and offroad CARS Section --- */
+.hot-section {
+    margin-top: 30px;
+  }
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    }
+
+
+
+.pg-2-bg {
+    background: #fffafa;
+    width: 1440px;
+    height: 1594px;
+    position: absolute;
+    left: calc(50% - 720px);
+    top: 290px;
+}
+
+.next-page {
+    position: absolute;
+    inset: 0;
+}
+
+
+
+.nav-bar {
+    width: 1285px;
+    height: 72px;
+    position: static;
+}
+
+
+.about-us {
+    color: #121212;
+    text-align: left;
+    font-family: "Outfit-Bold", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: calc(50% - -425px);
+    top: 43px;
+    width: 85px;
+    height: 26px;
+}
+
+
+/* FOOTER */
+.footer-back {
+    background-color: #000000;
+    color: #ffffff;
+    /* White text color */
+    margin-top: 350px;
+    height: 310px;
+}
+
+.FooterLogo {
+    margin-left: 10px;
+    /* Adjust as needed */
+    margin-top: 20px;
+    /* Adjust as needed */
+}
+
+
+.list-container {
+    display: flex;
+}
+
+.list-column {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+    /* Center-align content */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    /* Left-align list items */
+}
+
+li {
+    margin-bottom: 2px;
+    margin-left: 15px;
+}
+
+.rectangle-52 {
+    background: #fb4729;
+    border-radius: 25px;
+    width: 1285px;
+    height: 44px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.copyright-2024-all-rights-reserved {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Outfit-Bold", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    position: absolute;
+    margin-left: 525px;
+    margin-top: 9px;
+}
+
+/* FOOTER */

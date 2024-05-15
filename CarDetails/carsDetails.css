@@ -1,0 +1,310 @@
+* {
+    font-family: Outfit;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+
+/* --- NAV BAR CSS --- */
+.nav-back {
+    background-color: #343a40;
+
+}
+
+.back-btn {
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-align: left;
+    margin-left: 25pt;
+
+}
+
+.back-btn a {
+    color: #ffffff;
+    /* Black text color */
+
+}
+
+
+.nav-class {
+    background: #d9d9d9;
+    border-radius: 25px;
+    height: 72px;
+    align-items: center;
+    margin: 20px 50px;
+    /* Optional padding for content */
+    display: flex;
+    /* Use flexbox for responsive layout */
+    justify-content: space-between;
+    /* Align items horizontally */
+    z-index: 1000;
+}
+
+.navLogo {
+    margin-left: 15px;
+}
+
+.nav-list {
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Use flexbox for styling */
+}
+
+.nav-item {
+    margin-right: 20px;
+    /* Adjust spacing between items */
+}
+
+.nav-link {
+    color: #121212;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbtn {
+    display: none;
+
+}
+
+/* --- NAV BAR CSS --- */
+
+
+
+.mainImage {
+    border-radius: 20px;
+    margin-left: 315px;
+    width: 970px;
+}
+
+.sidePic1 {
+    border-radius: 20px;
+    top: 20px;
+
+}
+
+/* //////////////////////// */
+.car-showcase {
+    margin-left: 55px;
+    display: flex;
+    width: 1230px;
+    height: 400px; /* Adjusted for better layout */
+}
+
+.side-images {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    width: 20%; /* Smaller width for the sidebar of images */
+    height: 100%;
+}
+
+.small-image {
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 25%; /* Each small image takes up one-fourth of the height */
+    object-fit: cover;
+}
+
+.main-image {
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* \\\\\\\ */
+
+.login-btn {
+    background-color: #fb4729;
+    color: #fff;
+    border: none;
+    padding: 10px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.details-section, .cost-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.details-section {
+    margin-right: 20px;
+}
+
+.cost-section {
+    width: 300px; /* Fixed width for the cost section */
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.description-container {
+    background-color: #FAFAF5; /* White background */
+    border-radius: 20px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 8px E6E6E6; /* Subtle shadow for depth */
+    padding: 20px; /* Padding around content */
+    width: 80%; /* Responsive width */
+    max-width: 1000px; /* Maximum width */
+    margin: auto; /* Center align the container */
+}
+
+/* \\\\\\\ */
+
+/* //////////////////////// */
+
+
+.pg-2-bg {
+    background: #fffafa;
+    width: 1440px;
+    height: 1594px;
+    position: absolute;
+    left: calc(50% - 720px);
+    top: 290px;
+}
+
+.next-page {
+    position: absolute;
+    inset: 0;
+}
+
+
+
+.nav-bar {
+    width: 1285px;
+    height: 72px;
+    position: static;
+}
+
+
+.about-us {
+    color: #121212;
+    text-align: left;
+    font-family: "Outfit-Bold", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: calc(50% - -425px);
+    top: 43px;
+    width: 85px;
+    height: 26px;
+}
+
+
+/* FOOTER */
+.footer-back {
+    background-color: #000000;
+    color: #ffffff;
+    /* White text color */
+    margin-top: 350px;
+    height: 310px;
+}
+
+.FooterLogo {
+    margin-left: 10px;
+    /* Adjust as needed */
+    margin-top: 20px;
+    /* Adjust as needed */
+}
+
+
+.list-container {
+    display: flex;
+}
+
+.list-column {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+    /* Center-align content */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    /* Left-align list items */
+}
+
+li {
+    margin-bottom: 2px;
+    margin-left: 15px;
+}
+
+.rectangle-52 {
+    background: #fb4729;
+    border-radius: 25px;
+    width: 1285px;
+    height: 44px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.copyright-2024-all-rights-reserved {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Outfit-Bold", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    position: absolute;
+    margin-left: 525px;
+    margin-top: 9px;
+}
+
+/* FOOTER */
