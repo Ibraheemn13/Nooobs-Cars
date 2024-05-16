@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("here g")
     fetch('/api/cars')
         .then(response => response.json())
         .then(cars => {
+            console.log("Fetched cars data:", cars); // Debug statement
             const table = document.getElementById('myTable').getElementsByTagName('tbody')[0];
 
             cars.forEach((car, index) => {
@@ -33,6 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 deleteCell.appendChild(deleteButton);
                 row.appendChild(deleteCell);
 
+                const editCell = document.createElement('td');
+                const editButton = document.createElement('button');
+                editButton.textContent = 'Edit';
+                editButton.addEventListener('click', () => {
+                    editCar(car);
+                });
+                editCell.appendChild(editButton);
+                row.appendChild(editCell);
+
                 table.appendChild(row);
             });
         })
@@ -43,14 +52,29 @@ function deleteCar(carId, row) {
     fetch(`/api/cars/${carId}`, {
         method: 'DELETE'
     })
-        .then(response => {
-            if (response.ok) {
-                row.remove();
-                alert('Car deleted successfully');
-            } else {
-                console.error('Failed to delete car');
-                alert('Failed to delete car');
-            }
-        })
-        .catch(error => console.error('Error deleting car:', error));
+    .then(response => {
+        if (response.ok) {
+            row.remove();
+            alert('Car deleted successfully');
+        } else {
+            console.error('Failed to delete car');
+            alert('Failed to delete car');
+        }
+    })
+    .catch(error => console.error('Error deleting car:', error));
+}
+
+function editCar(car) {
+    const form = document.getElementById('updateAdForm');
+    form.style.display = 'block';
+
+    document.getElementById('carId').value = car._id;
+    document.getElementById('carName').value = car.CarName;
+    document.getElementById('modelYear').value = car.ModelYear;
+    document.getElementById('description').value = car.Description;
+}
+
+function hideForm() {
+    const form = document.getElementById('updateAdForm');
+    form.style.display = 'none';
 }
