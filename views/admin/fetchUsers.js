@@ -53,8 +53,10 @@ function deleteUser(userId, row) {
     .then(response => {
         if (response.ok) {
             row.remove();
+            alert('User deleted successfully');
         } else {
             console.error('Failed to delete user');
+            alert('Failed to delete user');
         }
     })
     .catch(error => console.error('Error deleting user:', error));

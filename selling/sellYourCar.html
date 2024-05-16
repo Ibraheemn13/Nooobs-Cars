@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login to N.O.O.O.B.S.</title>
+  <!-- FRIV Icon -->
+  <link rel="icon" type="image/x-icon" href="/Images/Nooobs logo 1.0.png">
+  <link rel="stylesheet" href="sellYourCar.css">
+
+  <!-- Linking font Outfit and Press Start 2p-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+
+
+
+
+
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Include Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <section class="nav-back">
+    <!-- NavBar -->
+    <!-- --- NAV BAR HTML --- -->
+    <center>
+      <br>
+      <nav class="nav nav-class " id="navid">
+        <!-- NavBar Logo -->
+        <div class="navLogo">
+          <a href="../index.html"><img src="/Images/Nooobs logo 1.0.png" alt="Nooobs logo" width="200px"></a>
+        </div>
+
+        <!-- NavBar List -->
+        <ul class="nav nav-list" id="navbarNav">
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Brands</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Experience</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>Contact</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" style="color: #121212; font-size: 20px;"><b>About Us</b></a>
+          </li>
+        </ul>
+
+        <button class="navbtn navbar-toggler" style="color: black;" onclick="showNav()">
+          <span class="navbar-toggler-icon" style="color: #121212;">MENU</span>
+        </button>
+
+      </nav>
+    </center>
+    <br>
+
+
+    <button type="menu" class="back-btn"><a href="#">&lt;Go Back</a></button>
+
+
+    <H3 style="color: #ffffff"><b>&nbsp; &nbsp; &nbsp;Sell Your Car</b></H3>
+    <h5 style="color: #ffffff"><b>&nbsp; &nbsp; &nbsp; Enter the Details of your Car</b></h5>
+
+    <!-- --- NAV BAR HTML --- -->
+    <br>
+  </section>
+
+  <br>
+
+
+  <p><b> &nbsp; &nbsp; &nbsp;Car Details</b></p>
+
+
+  <!-- Details Card -->
+
+  <div class="container">
+    <div class="login-card">
+      <h2 font><b>Enter the Details</b></h2>
+      <form id="carForm" action="/submit-car-details" method="POST" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label for="CarName">
+                <b>Car Name</b><span class="required-field">*</span>
+            </label>
+            <input type="text" class="form-control" id="CarName" placeholder="Enter Car Name" name="CarName" required>
+        </div>
+        
+
+        <div class="form-group">
+          <label for="CarModelYear">
+            <b>Model Year</b><span class="required-field">*</span>
+        </label>
+          <input type="text" class="form-control" id="CarModelYear" placeholder="Enter Car Model" name="CarModelYear" required>
+        </div>
+
+        <div class="form-group">
+            <label for="CarDescription">
+                <b>Description</b><span class="required-field">*</span>
+            </label>
+            <input type="text" class="form-control" id="CarDescription" placeholder="Enter description of your car" name="CarDescription" required>
+        </div>
+
+        <div class="form-group">
+            <label for="CarImage1">
+                <b>Image 1</b><span class="required-field">*</span>
+            </label>
+            <input type="file" class="form-control" id="CarImage1" name="CarImage1" accept="image/*" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="CarImage2">
+                <b>Image 2</b><span class="required-field">*</span>
+            </label>
+            <input type="file" class="form-control" id="CarImage2" name="CarImage2" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+            <label for="CarImage3">
+                <b>Image 3</b><span class="required-field">*</span>
+            </label>
+            <input type="file" class="form-control" id="CarImage3" name="CarImage3" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+            <label for="CarImage4">
+                <b>Image 4</b><span class="required-field">*</span>
+            </label>
+            <input type="file" class="form-control" id="CarImage4" name="CarImage4" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+            <label for="CarImage5">
+                <b>Image 5</b><span class="required-field">*</span>
+            </label>
+            <input type="file" class="form-control" id="CarImage5" name="CarImage5" accept="image/*" required>
+        </div>
+        <small style="color: red;" class="form-text forgot-password">* Represents Required Field</small>
+        <button type="submit" class="btn login-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  
+
+
+  <section class="footer-back">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="navLogo">
+            <a href="#"><img src="Nooobs logo 1.0.png" alt="Nooobs logo" width="200px"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <center>
+
+      <div class="list-container">
+        <div class="list-column">
+          <h3>Brands</h3>
+          <ul style="padding-left: 125px;">
+            <li>Toyota</li>
+            <li>Nissan</li>
+            <li>Porsche</li>
+            <li>Lamborghini</li>
+            <li>McLaren</li>
+          </ul>
+        </div>
+        <div class="list-column">
+          <h3>Services</h3>
+          <ul style="padding-left: 115px;">
+            <li>Purchase</li>
+            <li>Finance</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="list-column">
+          <h3>Contact Us</h3>
+          <ul style="padding-left: 100px;">
+            <li>Phone Number</li>
+            <li>Email</li>
+            <li><a href="https://www.instagram.com/n.o.o.o.b.s/">Instagram</a></li>
+            <li>Facebook</li>
+            <li>X</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </center>
+  </section>
+
+  <script src="../script.js"></script>
+  <script>
+
+    // --- NAV BAR JS ---
+    function showNav() {
+      var navbarNav = document.getElementById("navbarNav");
+      if (navbarNav.style.display === "block") {
+        navbarNav.style.display = "none";
+        document.getElementById("navid").classList.remove("nav-class2")
+        document.getElementById("navid").classList.toggle("nav-class")
+      }
+      else {
+        navbarNav.style.display = "block";
+        document.getElementById("navid").classList.toggle("nav-class2")
+        document.getElementById("navid").classList.remove("nav-class")
+      }
+    }
+
+
+    // Attach event listeners
+    document.querySelector("form").addEventListener("submit", handleSubmit);
+  </script>
+</body>
+
+</html>

@@ -3,9 +3,11 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const nodemailer = require("nodemailer");
+const multer = require("multer");
 const { signInFun } = require('./signin');
 const { saveToDb, submitCode, sendVerificationEmail } = require("./signup");
 const User = require('./user');
+const Cars = require('./cars');
 
 
 // Load environment variables from .env file
@@ -24,6 +26,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static('login'));
 app.use(express.static('./'));
+
+
+// Multer setup for file uploads
+const storage = multer.memoryStorage(); // Store files in memory
+const upload = multer({ storage: storage });
 
 
 // // Add the new API endpoint to get users data
@@ -45,6 +52,18 @@ app.delete('/api/users/:id', async (req, res) => {
         res.status(200).send('User deleted');
     } catch (error) {
         console.error('Error deleting user:', error.message);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+// API endpoint to get car details by ID
+app.get('/api/cars/:id', async (req, res) => {
+    try {
+        const carId = new mongoose.Types.ObjectId(req.params.id); // Correctly create an ObjectId instance
+        const car = await Cars.findById(carId);
+        res.json(car);
+    } catch (error) {
+        console.error('Error fetching car details:', error.message);
         res.status(500).send('Internal Server Error');
     }
 });
@@ -108,6 +127,45 @@ app.post("/emailVerification/verifyEmail", async (req, res) => {
         console.error("Error verifying email:", error.message);
         res.send('<script>alert("Error verifying email."); window.location.href="/emailVerification/verifyEmail.html";</script>'
         );
+    }
+});
+
+
+// Route to handle GET request for car details form
+app.get('/sellYourCar', (req, res) => {
+    res.sendFile(path.join(__dirname, '/sellYourCar.html'));
+});
+
+// Route to handle the car details form submission with image uploads
+app.post('/submit-car-details', upload.fields([
+    { name: 'CarImage1', maxCount: 1 },
+    { name: 'CarImage2', maxCount: 1 },
+    { name: 'CarImage3', maxCount: 1 },
+    { name: 'CarImage4', maxCount: 1 },
+    { name: 'CarImage5', maxCount: 1 }
+]), async (req, res) => {
+    try {
+        const { CarName, CarModelYear, CarDescription } = req.body;
+        
+        // Create a new car document
+        const newCar = new Cars({
+            CarName: CarName,
+            ModelYear: CarModelYear,
+            Description: CarDescription,
+            Image1: req.files.CarImage1 ? { data: req.files.CarImage1[0].buffer, contentType: req.files.CarImage1[0].mimetype } : undefined,
+            Image2: req.files.CarImage2 ? { data: req.files.CarImage2[0].buffer, contentType: req.files.CarImage2[0].mimetype } : undefined,
+            Image3: req.files.CarImage3 ? { data: req.files.CarImage3[0].buffer, contentType: req.files.CarImage3[0].mimetype } : undefined,
+            Image4: req.files.CarImage4 ? { data: req.files.CarImage4[0].buffer, contentType: req.files.CarImage4[0].mimetype } : undefined,
+            Image5: req.files.CarImage5 ? { data: req.files.CarImage5[0].buffer, contentType: req.files.CarImage5[0].mimetype } : undefined,
+        });
+
+        // Save the car document to the database
+        await newCar.save();
+
+        res.send(`<script>alert('Car details submitted successfully.'); window.location.href="/";</script>`);
+    } catch (error) {
+        console.error('Error submitting car details:', error.message);
+        res.status(500).send(`<script>alert('Error submitting car details.'); window.location.href="/sellYourCar";</script>`);
     }
 });
 
