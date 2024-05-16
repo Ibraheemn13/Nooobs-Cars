@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="adminPanel.css">
+    <link rel="stylesheet" href="dashBoard.css">
+    <link rel="stylesheet" href="viewUsers.css">
+    <script src="adminPanel.js" defer></script>
+    <script src="searching.js" defer></script>
+    <script src="fetchAds.js" defer></script>
+    <title>Nooobs Cars | View Advertisements</title>
+</head>
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus'></i>
+            <span class="logo_name"><a href="/index.html">Nooobs Cars</a></span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/views/admin/dashboard.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="/views/admin/dashboard.html">Dashboard</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/views/admin/viewUsers.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Customers</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="/views/admin/viewUsers.html">Customers</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/admin/generateReport">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Generate Report</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="/admin/generateReport">Generate Report</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/admin/viewFeedBack">
+                    <i class='bx bx-compass'></i>
+                    <span class="link_name">View FeedBack</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="/admin/viewFeedBack">View FeedBack</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="viewAds.html">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">Advertisement Details</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="viewAds.html">Advertisement Details</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <!--<img src="image/profile.jpg" alt="profileImg">-->
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Name</div>
+                        <div class="job">Admin</div>
+                    </div>
+                    <i class='bx bx-log-out' id="logOut"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text">Nooobs Cars | View Advertisements</span>
+        </div>
+        <div class="users-data">
+            <div class="searchBox">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names...">
+            </div>
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Car Name</th>
+                        <th>Model Year</th>
+                        <th>Description</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        const logOutBtn = document.getElementById("logOut");
+        logOutBtn.addEventListener("click", () => {
+            location.href = "/admin/logout";
+        });
+
+        function myFunction() {
+            const input = document.getElementById('myInput');
+            const filter = input.value.toUpperCase();
+            const table = document.getElementById('myTable');
+            const tr = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < tr.length; i++) {
+                const td = tr[i].getElementsByTagName('td');
+                let txtValue = '';
+                for (let j = 0; j < td.length; j++) {
+                    if (td[j]) {
+                        txtValue += td[j].textContent || td[j].innerText;
+                    }
+                }
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = '';
+                } else {
+                    tr[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
