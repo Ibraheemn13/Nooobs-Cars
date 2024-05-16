@@ -22,7 +22,9 @@ var update = true;
 var onetp = 0;
 
 // Middleware to parse the body of HTTP requests
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
 
 app.use(express.static('login'));
 app.use(express.static('./'));
@@ -67,6 +69,45 @@ app.get('/api/cars/:id', async (req, res) => {
         res.status(500).send('Internal Server Error');
     }
 });
+
+// API endpoint to update a car by ID
+app.put('/api/cars/:id', async (req, res) => {
+    try {
+        const carId = req.params.id;
+        const updatedCar = await Cars.findByIdAndUpdate(carId, req.body, { new: true });
+        if (!updatedCar) {
+            return res.status(404).send('Car not found');
+        }
+        res.status(200).json(updatedCar);
+    } catch (error) {
+        console.error('Error updating car:', error.message);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+// Add the new API endpoint to get cars data
+app.get('/api/cars', async (req, res) => {
+    try {
+        const cars = await Cars.find();
+        res.json(cars);
+    } catch (error) {
+        console.error('Error fetching cars:', error.message);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+// API endpoint to delete a car by ID
+app.delete('/api/cars/:id', async (req, res) => {
+    try {
+        const carId = req.params.id;
+        await Cars.findByIdAndDelete(carId);
+        res.status(200).send('Car deleted');
+    } catch (error) {
+        console.error('Error deleting car:', error.message);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
 
 // // FOR SIGNUP PAGE
 
